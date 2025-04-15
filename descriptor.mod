@@ -1,7 +1,9 @@
-version="1.16.*"
+version="1.16.4"
 tags={
+	"Alternative History"
 	"Historical"
+	"Ideologies"
+	"Military"
 }
-name="vanguard_mp"
-supported_version="1.16.4"
-remote_file_id="3459110635"
+name="sisimiloxmod competitive mp mod"
+supported_version="1.16.4" 
