@@ -1,0 +1,182 @@
+
+SOV_grind = {
+	SOV_grind_finland = {
+
+		icon = generic_army_support
+
+		available = {
+			has_war = no			
+		}
+		
+		activation = {
+			has_war_with = FIN
+			has_global_flag = SOV_PreGrind
+			NOT = { has_war_with = GER}
+		}
+		
+		is_good = yes
+		days_mission_timeout = 1
+
+		timeout_effect = {
+			country_event = { id = finland.8 }
+		}
+		
+		complete_effect = {
+		}	
+	}
+	SOV_seize_gold = {
+		
+			icon = generic_operation
+
+			available = {
+				SPR = { has_war = no }			
+			}
+			
+			activation = {
+				has_global_flag = spanish_civil_war	
+			}
+			
+			is_good = yes
+			days_mission_timeout = 150
+			fire_only_once = yes
+
+			timeout_effect = {
+				add_political_power = -25
+				add_timed_idea = { idea = SPR_seized_spanish_gold_reserves days = 365 }
+			}
+			
+			complete_effect = {
+			}
+		
+		}
+	SOV_xp_cw = {
+
+		icon = generic_army_support
+
+		available = {
+			original_tag = SOV	
+		}
+		
+		visible = {
+			has_global_flag = SOV_PreGrind
+			has_global_flag = spanish_civil_war		
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			army_experience = 250
+		}
+	}		
+}
+UNM_SOV = {
+
+	SOV_puppet_MON = {
+
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = MON
+				exists = yes
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			set_autonomy = {
+				target = MON
+				autonomous_state = autonomy_puppet
+			}			
+		}
+	}
+	SOV_annex_MON = {
+
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = MON
+				exists = yes
+			}
+			has_global_flag = sov_yes_pact
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = MON }
+			every_state = {
+				limit = {
+					is_core_of = MON
+					is_controlled_by = SOV
+					}
+				set_compliance = 100
+			}			
+		}
+	}
+}
+
+SOV_grind_UN = {
+	SOV_grind_ethiopia = {
+
+		icon = generic_army_support
+
+		available = {
+			not = {has_war_with = FIN}
+		}
+		
+		activation = {
+			has_war_with = FIN	
+			date < 1941.1.1
+			has_game_rule = {
+				rule   = UN_ALLOW_SOV_GRIND_UN
+				option = UN_SOV_GRIND
+			}	
+		}
+		
+		is_good = yes
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			country_event = { id = finland.8 }
+		}
+		
+		complete_effect = {
+			army_experience = 1
+		}
+	}
+
+	##SOV_grind_ethiopia_no_ter = {
+
+	##	icon = generic_army_support
+
+	##	available = {
+	##		not = {has_war_with = FIN}
+	##	}
+
+	##	activation = {
+	##		has_war_with = FIN	
+	##		date < 1941.1.1
+	##		has_game_rule = {
+	##			rule   = UN_SOV_GRIND
+	##			option = UN_SOV_GRIND_NO_TER
+	##		}	
+	##	}
+		
+	##	is_good = yes
+	##	days_mission_timeout = 180
+
+	##	timeout_effect = {
+	##		country_event = { id = finland.11 }
+	##	}
+
+	##	complete_effect = {
+	##		army_experience = 1
+	##	}
+	##}
+}

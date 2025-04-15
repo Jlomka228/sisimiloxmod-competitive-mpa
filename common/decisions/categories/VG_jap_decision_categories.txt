@@ -1,0 +1,14 @@
+JAP_annex = {
+
+	picture = GFX_decision_un_jap_annex
+
+	allowed = {
+		OR = {
+			original_tag = JAP
+		}
+	}
+	
+	visible = {
+		
+	}	
+}

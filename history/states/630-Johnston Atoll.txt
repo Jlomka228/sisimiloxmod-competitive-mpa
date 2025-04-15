@@ -1,0 +1,24 @@
+STATE=
+{
+	id=630
+	name="STATE_630"
+	manpower = 100
+	STATE_category = tiny_island
+
+	history={	1936.1.1.13 = { owner = }
+		owner = USA
+		add_core_of = UNM
+		buildings = {
+			infrastructure = 1
+			13051 = {
+				naval_base = 1
+			}
+		}
+	}
+	
+	provinces={
+		13051 	
+	}
+
+	local_supplies=0.0 
+}

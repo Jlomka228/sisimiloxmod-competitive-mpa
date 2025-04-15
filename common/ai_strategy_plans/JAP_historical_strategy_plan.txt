@@ -1,0 +1,94 @@
+JAP_historical_plan = {
+	name = "Japan historical plan"
+	desc = "Historical behavior for Japan"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					not = { has_dlc = "Waking the Tiger" }
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = DEFAULT
+					}
+				}
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = FASCIST
+			}
+			has_country_flag = JAP_AI_RANDOM_FASCIST
+		}
+		MAN = {
+			is_ai = yes
+		}
+	}
+	abort = {
+		MAN = {
+			has_completed_focus = MAN_assertiveness
+		}
+	}
+
+	ai_national_focuses = {	
+		JAP_the_manchurian_project #7
+		JAP_expand_the_showa_steel_works #21
+		JAP_expand_manchurian_railways #1
+		JAP_light_industry_development #21
+		JAP_heavy_industry_development #21
+		JAP_purge_the_kodoha_faction #70
+		JAP_guide_the_zaibatsus #70
+		JAP_national_mobilization_law #70
+		JAP_nationalize_war_industry #70
+		JAP_national_defense_state #49
+		#1937
+		#JAP_national_defense_state 21
+		JAP_national_research_policy #70 
+		JAP_army_expansion_law #35
+		JAP_army_expansion #35
+		JAP_supremacy_of_will#35
+		JAP_new_naval_estimates#35
+		JAP_liaison_conference #7
+		JAP_greater_east_asian_co_prosperity_sphere #7
+		JAP_japanese_settlement
+		JAP_intervene_in_china #7
+		JAP_small_arms_modernization #70
+		#1938
+		JAP_supremacy_of_technology #35
+		JAP_bicycle_battalions #35
+		JAP_spiritual_mobilization #70
+		JAP_sign_tripartite_pact #70
+		JAP_strike_south_doctrine #70
+		JAP_modern_artillery
+		JAP_cruiser_modernization
+		JAP_fighter_modernization
+		JAP_agility_focus
+		JAP_supremacy_of_the_battlefleet
+		JAP_the_ultimate_battleship
+		JAP_armored_divisions
+		JAP_secure_china
+		JAP_coal_liquification
+		JAP_develop_chinese_resources
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

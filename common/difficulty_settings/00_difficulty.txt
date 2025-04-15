@@ -1,0 +1,7 @@
+difficulty_settings = {
+	difficulty_setting = {
+		key = "Gaming Vanguard discord.gg/2vASs4KT"
+		modifier = diff_strong_ai_generic
+		multiplier = 0.0
+	}
+}

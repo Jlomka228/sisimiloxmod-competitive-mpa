@@ -1,0 +1,228 @@
+# Triggers for Lobby Rules
+################# SUBS #################
+are_subs3_enabled = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_SUBS
+			option = UN_SUBS3_BANNED
+		}	
+	}	
+}
+are_subs4_enabled = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_SUBS
+			option = UN_SUBS4_BANNED
+		}	
+	}	
+}
+################# AIR STRATEGIC #################
+are_sbombenabled_1 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STRATEGIC_BOMBER
+			option = UN_SBOMB1_BANNED
+		}	
+	}	
+}
+are_sbombenabled_2 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STRATEGIC_BOMBER
+			option = UN_SBOMB2_BANNED
+		}	
+	}	
+}
+are_sbombenabled_3 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STRATEGIC_BOMBER
+			option = UN_SBOMB3_BANNED
+		}	
+	}	
+}
+are_sbombenabled_4 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STRATEGIC_BOMBER
+			option = UN_SBOMB4_BANNED
+		}	
+	}	
+}
+################# AIR TACTICAL #################
+are_tbombenabled_1 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_TACTICAL_BOMBER
+			option = UN_TBOMB1_BANNED
+		}	
+	}	
+}
+are_tbombenabled_2 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_TACTICAL_BOMBER
+			option = UN_TBOMB2_BANNED
+		}	
+	}	
+}
+are_tbombenabled_3 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_TACTICAL_BOMBER
+			option = UN_TBOMB3_BANNED
+		}	
+	}	
+}
+are_tbombenabled_4 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_TACTICAL_BOMBER
+			option = UN_TBOMB4_BANNED
+		}	
+	}	
+}
+are_tbombenabled_5 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_TACTICAL_BOMBER
+			option = UN_TBOMB5_BANNED
+		}	
+	}	
+}
+################# AIR STRATEGIC #################
+are_hfbombenabled_1 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_HEAVY_F_BOMBER
+			option = UN_HFBOMB1_BANNED
+		}	
+	}	
+}
+are_hfbombenabled_2 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_HEAVY_F_BOMBER
+			option = UN_HFBOMB2_BANNED
+		}	
+	}	
+}
+are_hfbombenabled_3 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_HEAVY_F_BOMBER
+			option = UN_HFBOMB3_BANNED
+		}	
+	}	
+}
+################# AIR SCOUT PLANE #################
+are_scout_plane_enabled_1 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_SCOUT_PLANE
+			option = UN_SCOUT_BANNED_1
+		}	
+	}	
+}
+are_scout_plane_enabled_2 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_SCOUT_PLANE
+			option = UN_SCOUT_BANNED_2
+		}	
+	}	
+}
+################# AIR FIGHTER #################
+are_fighterenabled = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_FIGHTER
+			option = UN_FIGHTER_BANNED
+		}	
+	}	
+}
+################# AIR ALL #################
+are_air_all_dell_1 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STRATEGIC_BOMBER
+			option = UN_AIR_ALL_BANNED_1
+		}	
+	}	
+}
+are_air_all_dell_2 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_TACTICAL_BOMBER
+			option = UN_AIR_ALL_BANNED_2
+		}	
+	}	
+}
+are_air_all_dell_3 = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_HEAVY_F_BOMBER
+			option = UN_AIR_ALL_BANNED_3
+		}	
+	}	
+}
+################# MINE #################
+are_ban_mine = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_SUB_MINE
+			option = UN_MINE_BANNED
+		}
+	}	
+}
+################# abilities #################
+are_force_attack_enabled = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_ATTACK
+			option = UN_ATTACK_BANNED
+		}
+	}	
+}
+are_last_stand = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_STAND
+			option = UN_STAND_BANNED
+		}
+	}	
+}
+are_force_plan = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_PLAN
+			option = UN_PLAN_BANNED
+		}
+	}	
+}
+are_makeshift_bridges = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_MAKESHIFT_BRIDGES
+			option = UN_BRIDGES_BANNED
+		}
+	}	
+}
+################# railway gun #################
+are_railway_gun_en = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_RAILWAY_GUN
+			option = UN_RAILWAY_GUN_BANNED
+		}
+	}	
+}
+################# atom #################
+are_atom_enabled = {
+	NOT = {
+		has_game_rule = {
+			rule = UN_ALLOW_ATOM
+			option = UN_ATOM
+		}
+	}	
+}

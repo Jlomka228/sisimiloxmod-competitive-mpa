@@ -1,0 +1,21 @@
+STATE={
+	id=663
+	name="STATE_663"
+	manpower = 8808
+	
+	STATE_category = wasteland
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = UNM
+	}
+
+	provinces={
+		1062 1186 1204 4063 4133 4151 7063 7082 7139 9977 10049 10785 12025 12079 12094   
+	}
+
+	local_supplies=0.0 
+}

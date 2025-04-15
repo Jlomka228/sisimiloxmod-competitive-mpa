@@ -1,0 +1,14 @@
+UN_ai_strategy = {
+	enable = {
+		original_tag = INS
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = ENG
+		value = 10000
+	}
+}

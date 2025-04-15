@@ -1,0 +1,130 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+
+### ENG_vickers_armstrong_eng_organization -> see ENG_organizations.txt 
+### FRA_renault_organization -> see FRA_organizations.txt 
+
+
+BEL_marmon_herrington_organization = {
+	include = generic_heavy_tank_organization
+	icon = GFX_idea_marmon_herrington
+	allowed = {	
+		tag = BEL
+	}
+}
+
+BEL_detroit_arsenal_organization = {
+	name = detroit_arsenal
+	include = generic_tank_organization
+	icon = GFX_idea_generic_industrial_concern_1
+	allowed = {	
+		tag = BEL
+	}
+
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+BEL_cockerill_organization = {
+	name = cockerill
+	include = generic_escort_ship_organization
+	icon = GFX_idea_generic_naval_manufacturer_1
+	allowed = {
+		original_tag = BEL
+	}
+}
+
+BEL_electric_boat_company_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_electric_boat_company
+	allowed = {	
+		tag = BEL 
+	}
+
+
+}
+
+BEL_brooklyn_naval_yard_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_brooklyn_naval_yard
+	allowed = {	
+		tag = BEL 
+	}
+
+}
+
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+BEL_avions_fairey_organization = {
+	name = avions_fairey
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_1
+	allowed = {
+		original_tag = BEL
+	}
+}
+
+BEL_renard_organization = {
+	name = renard
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_generic_air_manufacturer_2
+	allowed = {
+		original_tag = BEL
+	}
+}
+
+BEL_north_american_aviation_organization = {
+	include = generic_range_focused_aircraft_organization
+	icon = GFX_idea_north_american_aviation
+	
+	allowed = {	
+		tag = BEL
+	}
+}
+
+
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+BEL_fn_herstol_organization = {
+	name = fn_herstol
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = {
+		original_tag = BEL
+	}
+}

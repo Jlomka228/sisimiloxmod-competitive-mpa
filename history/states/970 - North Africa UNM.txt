@@ -1,0 +1,24 @@
+
+state = {
+	id = 970
+	name = "STATE_970"
+	manpower = 200620
+	
+	state_category = town
+
+	history = {
+		owner = ITA
+		add_core_of = UNM
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+		}
+		victory_points = { 11951 1 }
+	}
+
+	provinces = {
+		11951 1060 4060 7206 13078
+	}
+
+	local_supplies=0.0
+}

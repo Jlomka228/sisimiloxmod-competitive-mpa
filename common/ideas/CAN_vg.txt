@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		no_aisa_idea = {
+	
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = eng_special_air_service
+
+			removal_cost = -1
+	
+			modifier = {
+				special_forces_cap = 0.90
+			}
+		}
+	}
+}

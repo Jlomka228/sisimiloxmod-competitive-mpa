@@ -1,0 +1,45 @@
+STATE={
+	id=604
+	name="STATE_604"
+
+	history={	1936.1.1.13 = { owner = }
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = CHI
+		add_core_of = CHI
+		victory_points = {
+			7940 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				CHI = {
+					transfer_STATE = PREV
+
+				}
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		4914 4964 7940 8018 8037 12899 
+	}
+	manpower=1196100
+	buildings_max_level_factor=1.000
+	STATE_category=rural
+
+	local_supplies=1.0 
+}

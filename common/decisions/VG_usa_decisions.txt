@@ -1,0 +1,150 @@
+USA_operations = {
+
+	ENG_Countenance = {
+	
+		icon = generic_army_support
+	
+		available = {
+			450 = {
+				NOT = { is_controlled_by = ITA}
+			}	
+			907 = {
+				is_controlled_by = ENG
+			}	
+            date > 1941.09.15
+            GER = { has_war_with = SOV }		
+		}
+	
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    SOV = {
+			transfer_state = 419
+			transfer_state = 420
+			transfer_state = 416
+			transfer_state = 418
+			transfer_state = 266
+			}	
+            USA = {
+			transfer_state = 421
+			transfer_state = 417
+			transfer_state = 413
+			transfer_state = 412
+			transfer_state = 411
+            transfer_state = 414
+			transfer_state = 410
+			}
+		}
+    }
+	
+	USA_torch = {
+		
+		icon = generic_army_support
+		
+		available = {
+			has_war_with = GER
+		    118 = {
+			is_controlled_by = eng
+			}
+			461 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			462 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			513 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			459 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			460 = {
+				NOT = { is_controlled_by = ENG}
+			}			
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    GER = {
+				annex_country = { target = VIC }
+			}		
+		}
+	}
+	USA_noasia = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = USA
+		}
+
+		available = {
+			date > 1936.1.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = USA
+			date > 1936.1.2
+		}
+		complete_effect = {
+			361 = {
+				add_resource = {
+					type = tungsten
+					amount = 137
+				}
+				add_resource = {
+					type = steel
+					amount = 427
+				}
+				add_resource = {
+					type = oil
+					amount = 680
+				}
+				add_resource = {
+					type = aluminium
+					amount = 190
+				}
+			}
+		}
+	}
+}
+
+USA_annexes = {
+	
+	USA_no_raj = { #USA gets this because ENG with annexed RAJ has to go for 4th doctrine.
+				   #so it cant deploy its own amphibious tanks for Dday.
+		
+	    icon = generic_army_support
+		
+	    available = {
+			Date < 1941.09.01
+			439 = {
+				controller = {
+					NOT = { tag = RAJ }
+					NOT = { tag = ITA }
+					NOT = { tag = GER }
+					NOT = { tag = ROM }
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			add_ideas = USA_no_raj_idea
+		}
+		
+	}
+
+}

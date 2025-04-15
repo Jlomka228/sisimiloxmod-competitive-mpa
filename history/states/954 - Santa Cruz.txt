@@ -1,0 +1,23 @@
+state = {
+	id = 954
+	name = "STATE_954"
+	manpower = 1
+	
+	state_category = rural
+	
+	resources = {
+		oil = 3
+	}
+
+	history = {
+
+
+		
+	}
+
+	provinces = {
+		2169 5173 12946 12952 13305
+	}
+
+	local_supplies = 0.0 
+}

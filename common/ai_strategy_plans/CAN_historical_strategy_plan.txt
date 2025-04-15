@@ -1,0 +1,80 @@
+CAN_historical = {
+	name = "Canadian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = CAN
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = CAN_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = CAN_AI_RANDOM_DEMOCRATIC_HISTORICAL 
+			has_game_rule = {
+				rule = CAN_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+			has_country_flag = britain_enforced_our_loyalty
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		CAN_strengthen_the_commonwealth_ties
+		CAN_army_modernization
+		CAN_shadow_factories
+		CAN_rowell_sirois_commission
+		CAN_crown_corporations
+		CAN_national_housing_act
+		CAN_halifax_shipyards
+		CAN_montreal_laboratory_collaboration
+		CAN_camp_x
+		CAN_the_plan
+		CAN_supply_the_empire
+		CAN_aluminium_company_of_canada
+		CAN_turner_valley_oilfield
+		CAN_cmp_truck
+		CAN_canadian_infantry_corps
+		CAN_royal_regiment_of_canadian_artillery
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

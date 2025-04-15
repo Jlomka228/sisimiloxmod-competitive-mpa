@@ -1,0 +1,31 @@
+USA_operations = {
+	
+	icon = military_operation
+	
+	picture = generic_army_support
+	
+	allowed = {
+		original_tag = USA
+	}
+	
+	visible = {
+		always = yes
+	}
+	
+}
+
+USA_annexes = {
+	
+	icon = military_operation
+	
+	picture = generic_army_support
+	
+	allowed = {
+		original_tag = USA
+	}
+	
+	visible = {
+		always = yes
+	}
+	
+}

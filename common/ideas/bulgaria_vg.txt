@@ -1,0 +1,30 @@
+
+ideas = {
+
+	country = { 
+	
+		BUL_government_reforms_fascists_02 = {
+			name = BUL_government_reforms_communists_01
+
+			picture = FRA_market_dynamism
+
+			allowed = {
+				original_tag = BUL
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = -0.5
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_factor = -0.10
+				trade_laws_cost_factor = 0.5
+				min_export = -0.15
+			} 
+		}
+	}
+
+}

@@ -1,0 +1,262 @@
+ITA_grind = {
+	ITA_grind_ethiopia = {
+
+		icon = generic_army_support
+
+		available = {
+			not = {has_war_with = ETH}
+		}
+		
+		activation = {
+			has_war_with = ETH
+			has_game_rule = {
+				rule   = UN_ALLOW_ITA_GRIND_UN
+				option = UN_ITA_GRIND
+			}			
+		}
+		
+		is_good = yes
+		days_mission_timeout = 180
+
+		timeout_effect = {
+			country_event = { id = italy.17 }
+		}
+		
+		complete_effect = {
+		
+			army_experience = 1
+		}
+	}
+}
+
+ITA_un = {
+
+	ITA_French_north_africa = {
+		
+		icon = GFX_focus_ITA_mare_nostrum
+		
+		available = {
+			# eng fra dont control suez syria
+			453 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			454 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			455 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			553 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			554 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			680 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			677 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			799 = {
+				NOT = { is_controlled_by = FRA}
+			}			
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			every_state = {
+				ITA = { transfer_state = 665 }
+				665 = { set_compliance = 100 }
+			}	
+			every_state = {
+				ITA = { transfer_state = 458 }
+				458 = { set_compliance = 100 }
+			}	
+			every_state = {
+				ITA = { transfer_state = 460 }
+				460 = { set_compliance = 100 }
+			}	
+			every_state = {
+				ITA = { transfer_state = 459 }
+				459 = { set_compliance = 100 }
+			}	
+			every_state = {
+				ITA = { transfer_state = 290 }
+				290 = { set_compliance = 100 }
+			}	
+			every_state = {
+				ITA = { transfer_state = 177 }
+				177 = { set_compliance = 100 }
+			}				
+		}
+	}
+
+	ITA_un_annex_corsica = {
+	
+		icon = category_intervention_in_spain
+
+		available = {
+			FRA = { has_government = fascism }
+			date > 1940.9.1 
+		}
+
+		fire_only_once = yes
+		days_remove = -1
+		
+		complete_effect = {
+			every_state = {
+				ITA = { transfer_state = 1 }
+				1 = { set_compliance = 100 }
+			}	
+		}
+	}
+
+	ITA_iraq = {
+		
+		icon = oil
+		
+		available = {
+			# eng fra dont control suez syria
+			453 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			454 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			455 = {
+				NOT = { is_controlled_by = ENG}
+			}
+			553 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			554 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			680 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			677 = {
+				NOT = { is_controlled_by = FRA}
+			}
+			799 = {
+				NOT = { is_controlled_by = FRA}
+			}			
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = IRQ }
+			every_state = {
+				limit = {
+					is_core_of = IRQ
+					is_controlled_by = ITA
+					}
+				add_compliance = 100
+			}		
+		}
+	}	
+	
+	ITA_un_annex_ROM = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = ROM
+				exists = yes
+			}
+			date > 1938.06.01 
+                        ROM = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = ROM
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+            annex_country = { target = ROM transfer_troops = yes }
+            every_state = {
+                limit = { is_core_of = ROM }
+                add_core_of = ROOT
+            }
+            ROM = {
+                every_unit_leader = {
+                set_nationality = ITA
+                }
+            }
+		    create_corps_commander = { 
+			    name = "Marines Advisor"
+			    gfx = ITA_Fyl0_0Starkinni
+			    traits = { commando }
+			    skill = 6
+			    attack_skill = 1
+			    defense_skill = 1
+		        planning_skill = 1
+			    logistics_skill = 1
+			}	
+			set_technology = {
+                Fuel_refining2 = 1
+				Fuel_refining3 = 1
+				Fuel_refining4 = 1
+				basic_medium_tank_chassis = 1 
+				improved_light_tank_chassis = 1	
+				amphibious_tank_chassis = 1
+				amphibious_drive = 1 
+				Armored_train = 1
+				Marines = 1
+            }			
+        }		
+	}
+	ITA_un_annex_ETH = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = ETH
+				exists = yes
+			}
+             date < 1936.2.1 
+			 date > 1936.1.17
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = ETH
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+	    complete_effect = {
+		    add_threat = 3
+            annex_country = { target = ETH }
+		    army_experience = 140
+		    create_corps_commander = { 
+			    name = "Help Fyl0_0Starkinni007"
+			    gfx = ITA_Fyl0_0Starkinni
+			    traits = { infantry_leader desert_fox trait_mountaineer trickster skilled_staffer }
+			    skill = 5
+			    attack_skill = 5
+		    	defense_skill = 6
+		        planning_skill = 4
+		    	logistics_skill = 5
+		    }
+	    }	
+	}
+}

@@ -1,0 +1,17 @@
+STATE=
+{
+	id=312
+	name="STATE_312"
+	manpower=1
+
+	STATE_category = town
+	history=
+	{
+
+	}
+	provinces={
+		2031 8017 12865
+	}
+
+	local_supplies=0.0 
+}

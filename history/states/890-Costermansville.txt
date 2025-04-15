@@ -1,0 +1,16 @@
+STATE={
+	id=890
+	name="STATE_890"
+	manpower = 1
+	STATE_category = pastoral
+	
+	history={
+	}
+	
+	provinces={
+		1181 4201 4941 7161 10766 12783 13176
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

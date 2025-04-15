@@ -1,0 +1,14 @@
+STATE={
+	id=796
+	name="STATE_796"
+	history={
+	}
+	provinces={
+		2115 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	STATE_category=rural
+
+	local_supplies=0.0 
+}

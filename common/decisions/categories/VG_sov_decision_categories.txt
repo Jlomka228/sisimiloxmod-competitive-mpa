@@ -1,0 +1,29 @@
+SOV_grind = {
+
+	icon = generic_army_support
+
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+	}	
+}
+UNM_SOV = {
+
+	icon = decision_category_generic_communism
+
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+	}	
+}
+
+SOV_grind_UN = {
+	icon = eng_move_to_secure_the_dominions
+	allowed = {
+		original_tag = SOV
+	}
+}

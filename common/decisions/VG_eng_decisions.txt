@@ -1,0 +1,1253 @@
+ENG_unm = {
+
+	ENG_VG_no_canada = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			date > 1938.1.1 
+			OR = {
+			CAN = { is_ai = yes }
+			276 = {
+				controller = {
+					NOT = {
+						tag = CAN
+					}
+				}
+			}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			set_technology = { mechanised_infantry = 1 }	
+			army_experience = 100
+		}
+	}
+
+	ENG_WW2_SAF_resources = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = SAF
+				exists = yes
+			}
+			date > 1937.1.1 
+			SAF = { is_ai = no }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = SAF
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			SAF = {give_resource_rights = { receiver = ENG state = 719 }}
+		}			
+	}
+
+	ENG_unm_annex_RAJ = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			any_other_country = {
+				original_tag = RAJ
+				exists = yes
+			}
+			date > 1938.1.1 
+			RAJ = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = RAJ
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			hidden_effect = {
+				set_technology = { support_weapons = 1 }
+				set_technology = { support_weapons2 = 1 }
+				set_technology = { infantry_weapons2 = 1 }
+				set_technology = { improved_infantry_weapons = 1 }
+				set_technology = { tech_recon2 = 1 }
+				set_technology = { tech_engineers2 = 1 }
+				set_technology = { tech_recon3 = 1 }
+				set_technology = { tech_signal_company = 1 }
+				set_technology = { interwar_antitank = 1 }
+				set_technology = { antitank1 = 1 }
+				set_technology = { antitank2 = 1 }
+				set_technology = { antitank3 = 1 }	
+			}
+			add_political_power = 150
+			army_experience = 715
+			add_ideas = VG_eng_no_raj
+			annex_country = { target = RAJ transfer_troops = yes }
+			RAJ = {
+                every_unit_leader = {
+                set_nationality = ENG
+                }
+            }
+			every_state = {
+				limit = {
+					is_core_of = RAJ
+					is_controlled_by = ENG
+					}
+				ENG = {
+					add_state_core = PREV
+				}
+			}	
+		}
+	}
+	Eng_SAF_Annex_noasia = {
+
+		icon = category_eng_appeal_to_imperial_loyalists
+		
+		visible = {
+			has_global_flag = no_asia_game
+		}
+
+		allowed = {
+			original_tag = ENG
+			719 = {
+				controller = {
+					NOT = { tag = SAF }
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		complete_effect = {
+			hidden_effect = {
+				set_technology = { support_weapons = 1 }
+				set_technology = { support_weapons2 = 1 }
+				set_technology = { infantry_weapons2 = 1 }
+				set_technology = { improved_infantry_weapons = 1 }
+				set_technology = { tech_recon2 = 1 }
+				set_technology = { tech_engineers2 = 1 }
+				set_technology = { tech_recon3 = 1 }
+				set_technology = { tech_signal_company = 1 }
+				set_technology = { interwar_antitank = 1 }
+				set_technology = { antitank1 = 1 }
+				set_technology = { antitank2 = 1 }
+				set_technology = { antitank3 = 1 }	
+			}
+			add_political_power = 150
+			army_experience = 715	
+		}
+	}
+	ENG_unm_annex_RAJ2 = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+		
+		visible = {
+			NOT = { has_global_flag = no_asia_game }
+		}
+
+		available = {
+			OR = {
+			RAJ = { is_ai = yes }
+				439 = {
+					controller = {
+						NOT = { tag = RAJ }
+					}
+				}
+			}
+			date > 1939.1.1 
+			date < 1940.1.1 
+			
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}			
+		}
+	}
+	ENG_unm_annex_CAN = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			any_other_country = {
+				original_tag = CAN
+				exists = yes
+			}
+			date > 1939.1.1 
+			CAN = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = CAN transfer_troops = yes }
+			every_state = {
+				limit = {
+					is_core_of = CAN
+					is_controlled_by = ENG
+					}
+				ENG = {
+				    add_state_core = PREV
+				}
+			}			
+		}
+	}
+	ENG_unm_annex_SAF = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			any_other_country = {
+				original_tag = SAF
+				exists = yes
+			}
+			SAF = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = SAF
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = SAF transfer_troops = yes }
+			every_state = {
+				limit = {
+					is_core_of = SAF
+					is_controlled_by = ENG
+					}
+				set_compliance = 100
+			}			
+		}
+	}
+
+	ENG_unm_annex_AST = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			any_other_country = {
+				original_tag = AST
+				exists = yes
+			}
+			date > 1939.1.1 
+			AST = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = AST
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = AST transfer_troops = yes }
+			every_state = {
+				limit = {
+					is_core_of = AST
+					is_controlled_by = ENG
+					}
+				ENG = {
+				    add_state_core = PREV
+				}
+			}			
+		}
+	}
+	
+	ENG_unm_annex_NZL = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			any_other_country = {
+				original_tag = NZL
+				exists = yes
+			}
+			NZL = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = NZL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = NZL transfer_troops = yes }
+			every_state = {
+				limit = {
+					is_core_of = NZL
+					is_controlled_by = ENG
+					}
+				ENG = {
+				    add_state_core = PREV
+			    }
+			}			
+		}
+	}
+	
+	ENG_unm_FRA_union = {
+	
+		icon = category_eng_appeal_to_imperial_loyalists
+
+		available = {
+			NOT = {
+				FRA = { has_government = fascism }
+			}
+			any_other_country = {
+				original_tag = FRA
+				exists = yes
+				FRA = { is_ai = yes }
+			}
+			OR = {
+				AND = {
+					NOT = {16 = { is_controlled_by = FRA }}
+					NOT = {31 = { is_controlled_by = FRA }}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = FRA
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+		    add_political_power = 100
+			set_global_flag = fall_of_france
+			set_global_flag = flag_franco_british_union
+			if = {
+				limit = { 
+					439 = {
+						controller = {
+							tag = RAJ
+						}
+					}
+				}
+				army_experience = 999
+			}
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FRA
+					}
+					ENG = {
+						add_state_core = PREV
+					}
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = excavation1
+						}
+					}
+					set_technology = { excavation1 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = infantry_weapons2
+						}
+					}
+					set_technology = { infantry_weapons2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = improved_infantry_weapons
+						}
+					}
+					set_technology = { improved_infantry_weapons = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = improved_infantry_weapons_2
+						}
+					}
+					set_technology = { improved_infantry_weapons_2 = 1 }
+			    }
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = support_weapons
+						}
+					}
+					set_technology = { support_weapons = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = support_weapons2
+						}
+					}
+					set_technology = { support_weapons2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = support_weapons3
+						}
+					}
+					set_technology = { support_weapons3 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = tech_engineers2
+						}
+					}
+					set_technology = { tech_engineers2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = tech_recon2
+						}
+					}
+					set_technology = { tech_recon2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = tech_signal_company
+						}
+					}
+					set_technology = { tech_signal_company = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = tech_signal_company2
+						}
+					}
+					set_technology = { tech_signal_company2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = improved_light_tank_chassis
+						}
+					}
+					set_technology = { improved_light_tank_chassis = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = amphibious_tank_chassis
+						}
+					}
+					set_technology = { amphibious_tank_chassis = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = basic_medium_tank_chassis
+						}
+					}
+					set_technology = { basic_medium_tank_chassis = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = improved_medium_tank_chassis
+						}
+					}
+					set_technology = { improved_medium_tank_chassis = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = engine_tech_1
+						}
+					}
+					set_technology = { engine_tech_1 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = engine_tech_2
+						}
+					}
+					set_technology = { engine_tech_2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = interwar_antitank
+						}
+					}
+					set_technology = { interwar_antitank = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = antitank1
+						}
+					}
+					set_technology = { antitank1 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = antitank2
+						}
+					}
+					set_technology = { antitank2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = antitank3
+						}
+					}
+					set_technology = { antitank3 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = amphibious_drive
+						}
+					}
+					set_technology = { amphibious_drive = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = marines
+						}
+					}
+					set_technology = { marines = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = marines2
+						}
+					}
+					set_technology = { marines2 = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = tech_special_forces
+						}
+					}
+					set_technology = { tech_special_forces = 1 }
+				}
+				if = {
+					limit = { 
+						FRA = {
+							has_tech = improved_special_forces
+						}
+					}
+					set_technology = { improved_special_forces = 1 }
+				}
+				FRA = {
+					every_unit_leader = {
+						set_unit_leader_flag = flag_former_french_general
+						set_nationality = ENG
+					}
+				}
+				ENG = {
+					annex_country = { target = FRA transfer_troops = yes }
+				}
+				custom_effect_tooltip = FRA_franco_british_cores
+				hidden_effect = {
+					ENG = { set_cosmetic_tag = FRA_UK }
+					GER = { 
+						country_event = { hours = 6 id = news.35 }
+					}
+				}					
+			}	
+		}
+	}
+	ENG_un_annex_IRE = {
+	
+		icon = category_generic_foreign_policy
+
+		available = {
+			any_other_country = {
+				original_tag = IRE
+				exists = yes
+				126 = {
+                    NOT = {
+					    controller = {
+                            OR ={
+                                tag = ENG
+                                is_in_faction_with = ENG
+							}
+						}
+				    }
+                }
+			}
+			OR = {
+				AND = {
+					NOT = {16 = { is_controlled_by = FRA }}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = IRE
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = IRE }
+			every_state = {
+				limit = {
+					is_core_of = IRE
+					is_controlled_by = ENG
+					}
+				add_core_of = ROOT
+			}			
+		}
+	}
+}
+ENG_annex_unm = {
+
+	ENG_sue_for_peace_nuke = {
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			JAP = {
+				has_global_flag = JAP_nuke_1
+				has_global_flag = JAP_nuke_2
+				has_navy_size = { size < 40 }
+				NOT = {
+					controls_state = 526
+					controls_state = 645
+				}
+			}
+		}
+
+		visible = {
+			always = yes
+		}
+
+		cost = 0
+
+		complete_effect = {
+			JAP = {
+				add_ideas = VG_crushed_war_spirit 
+			}
+			hidden_effect = {
+				clr_global_flag = JAP_nuke_1
+				clr_global_flag = JAP_nuke_2
+			}
+		}
+	}
+
+	
+	ENG_unm_annex_DEN = {
+	
+		icon = category_ger_military_buildup
+
+		available = {
+			any_other_country = {
+				original_tag = DEN
+				exists = yes
+			}
+			OR = {
+				AND = {
+					NOT = {37 = { is_controlled_by = DEN }}
+				}
+			}
+		}
+
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = DEN
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove = -1
+		
+		complete_effect = {
+			annex_country = { target = DEN }
+			every_state = {
+				limit = {
+					is_core_of = DEN
+					is_controlled_by = ENG
+					}
+				set_compliance = 100
+			}
+			every_state = {
+				ENG = { transfer_state = 100 }
+				100 = { set_compliance = 100 }
+			}				
+		}
+	}
+	
+	ENG_unm_annex_HOL = {
+	
+		icon = eng_trade_unions_demand
+
+		available = {
+			any_other_country = {
+				original_tag = HOL
+				exists = yes
+			}
+			OR = {
+				AND = {
+					NOT = {7 = { is_controlled_by = HOL }}
+					NOT = {35 = { is_controlled_by = HOL }}
+					NOT = {36 = { is_controlled_by = HOL }}
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = HOL
+				}        
+					NOT = {
+					has_country_flag = d_occupation_law
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = HOL }
+			every_state = {
+				limit = {
+					is_core_of = HOL
+					is_controlled_by = ENG
+					}
+				set_compliance = 100
+			}			
+		}
+	}
+	ENG_unm_annex_IRQ = {
+	
+		icon = category_ger_military_buildup
+
+		available = {
+			any_other_country = {
+				original_tag = IRQ
+				exists = yes
+			}
+			date > 1941.1.1 
+			450 = {
+				NOT = { is_controlled_by = ITA}
+			}	
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = IRQ
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		complete_effect = {
+			annex_country = { target = IRQ }	
+		}
+	}
+    ENG_un_annex_islands = {
+	
+		icon = category_intervention_in_spain
+
+		available = {
+			date > 1939.7.1 
+		}
+
+		fire_only_once = yes
+		days_remove = -1
+		
+		complete_effect = {
+			every_state = {
+				ENG = { transfer_state = 697 }
+				697 = { set_compliance = 100 }
+				ENG = { transfer_state = 178 }
+				178 = { set_compliance = 100 }
+			}	
+		}
+	}
+}
+
+ENG_annex_unm_rip = {
+	ENG_unm_annex_INS = {
+
+		available = {
+			any_other_country = {
+				original_tag = INS
+			}
+			date > 1941.6.1
+			NOT = { has_global_flag = no_asia_game }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = INS
+				}
+			}
+		}
+		
+
+		fire_only_once = yes
+		days_remove = -1
+		
+		complete_effect = {
+			annex_country = { target = INS transfer_troops = yes }
+			every_state = {
+				limit = {
+					is_core_of = INS
+					is_controlled_by = ENG
+					}
+				set_compliance = 100
+			}		
+		}
+	}
+	ENG_unm_annex_POL = {
+
+		available = {
+			NOT = {
+				any_other_country = {
+					original_tag = POL
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = POL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+	}
+	ENG_unm_annex_NOR = {
+
+		available = {
+			NOT = {
+				any_other_country = {
+					original_tag = NOR
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = NOR
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+	}
+	ENG_unm_annex_GRE = {
+
+		available = {
+			NOT = {
+				any_other_country = {
+					original_tag = GRE
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = GRE
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+	}
+	ENG_unm_annex_BEL = {
+
+		available = {
+			NOT = {
+				any_other_country = {
+					original_tag = BEL
+				}
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = BEL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+	}
+	
+	
+	##    #  ####            #      ####  #      #
+	# #   # #    #		    # #    #     	    # #
+	#  #  # #    #		   #   #   ####   #    #   #
+	#   # # #    #		  #######      #  #   #######  
+	#    ##  ####  ##### #       # ####   #  #       # 
+	Eng_USA_boosts_noasia1 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1936.9.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1936.9.1
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 15
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_USA_boosts_noasia2 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1937.6.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1937.6.1
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_USA_boosts_noasia3 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1938.1.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1938.1.1
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_USA_boosts_noasia4 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1938.6.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1938.6.1
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 10
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_USA_boosts_noasia5 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1939.1.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1939.1.1
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 15
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_USA_boosts_noasia6 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1939.6.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1939.6.1
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = 30
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_USA_boosts_noasia7 = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		#Fail trigger
+		available = {
+			date > 1939.8.20
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			has_war_with = GER
+		}
+		complete_effect = {
+			ENG = {
+				add_offsite_building = {
+					type = industrial_complex
+					level = -90
+					instant_build = yes
+				}	
+			}
+		}
+	}
+	Eng_noasia = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = ENG
+		}
+
+		available = {
+			date > 1936.1.1
+			has_global_flag = no_asia_game
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = ENG
+			date > 1936.1.2
+		}
+		complete_effect = {
+			422 = {
+				add_resource = {
+					type = tungsten
+					amount = 212
+				}
+				add_resource = {
+					type = rubber
+					amount = 23
+				}
+				add_resource = {
+					type = chromium
+					amount = 40
+				}
+			}
+		}
+	}
+}

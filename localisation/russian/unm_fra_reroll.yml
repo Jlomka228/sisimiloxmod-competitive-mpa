@@ -1,0 +1,14 @@
+﻿l_russian:
+STATE_909:0 "Восточная Киренаика"
+STATE_910:0 "Восточный Матрух"
+
+FRA_rerol_country:0 "Смена игровой страны"
+
+FRA_rerol_country_ENG:0 "Пересесть на Великобританию"
+FRA_rerol_country_ENG_tt:0 "Вы пересядете на §YВеликобританию§!."
+
+FRA_rerol_country_USA:0 "Пересесть на США"
+FRA_rerol_country_USA_tt:0 "Вы пересядете на §YСША§!."
+
+FRA_rerol_country_SOV:0 "Пересесть на СССР"
+FRA_rerol_country_SOV_tt:0 "Вы пересядете на §YСССР§!."

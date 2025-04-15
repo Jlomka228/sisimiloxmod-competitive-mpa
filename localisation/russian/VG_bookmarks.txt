@@ -1,0 +1,2 @@
+l_russian:
+ NO_ASIA_NAME:0 "Без Азии"

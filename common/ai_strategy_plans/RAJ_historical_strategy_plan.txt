@@ -1,0 +1,82 @@
+RAJ_historical = {
+	name = "Indian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = RAJ
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = RAJ_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = RAJ_AI_RANDOM_DEMOCRATIC_HISTORICAL 
+			has_game_rule = {
+				rule = RAJ_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+			has_country_flag = britain_enforced_our_loyalty
+		}
+	}
+	abort = {
+		is_subject = no
+	}
+
+	ai_national_focuses = {
+		RAJ_lessons_of_the_great_war	
+		RAJ_indianisation_of_army
+		RAJ_lions_of_the_great_war
+		RAJ_great_indian_peninsula_railway
+		RAJ_industrial_expansion
+		RAJ_tata_steel
+		RAJ_assam_oil
+		RAJ_indian_institute_of_science
+		RAJ_expand_mazagon_dock
+		RAJ_east_india_railways
+		RAJ_ishapore_arsenal
+		RAJ_vickers_berthier_gun
+		RAJ_royal_indian_artillery
+		RAJ_found_scindia_shipyard
+		RAJ_provincial_elections
+		RAJ_indian_national_congress
+		RAJ_cripps_mission
+		RAJ_two_nation_theory
+		RAJ_quit_india_movement							
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

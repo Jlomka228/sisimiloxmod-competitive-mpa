@@ -1,0 +1,257 @@
+﻿l_english:
+UN_DECISIONS:0 "Setting up the rules of the game"
+UN_ALLOW_SOV_GRIND_UN:0 "Soviet-Finnish War"
+UN_ALLOW_ITA_GRIND_UN:0 "Italo-Ethiopian War"
+UNM_VICHY:0 "Vichy France"
+UN_TECHNOLOGIES:0 "Technologies"
+UN_ALLOW_SUBS:0 "Submarines"
+UN_ALLOW_STRATEGIC_BOMBER:0 "Strategic bombers"
+UN_ALLOW_TACTICAL_BOMBER:0 "Tactical bombers"
+UN_ALLOW_HEAVY_F_BOMBER:0 "Heavy fighters"
+UN_ALLOW_SCOUT_PLANE:0 "Reconnaissance planes"
+UN_ALLOW_FIGHTER:0 "Fighter"
+UN_SUB_MINE:0 "Sea mines"
+UN_TRAITS:0 "Traits"
+UN_ALLOW_ADAPTABLE:0 "Adaptable"
+UN_ABILITIES:0 "Special abilities"
+UN_ALLOW_ATTACK:0 "Forced attack"
+UN_ALLOW_STAND:0 "Forced defense"
+UN_ALLOW_PLAN:0 "Staff planning"
+UN_ALLOW_MAKESHIFT_BRIDGES:0 "Temporary bridges"
+UN_ALLOW_RAILWAY_GUN:0 "Railway artillery"
+UN_ALLOW_ATOM: "Atomic bomb"
+SOV_CLOSED_ECO: "Setting up the Soviet Union"
+JAP_CLOSED_ECO: "Setting up Japan"
+GER_SETTING: "Setting up Germany"
+government_setting_ec: "Setting up the economies of countries"
+setting_resources: "Setting up resources in the world"
+map_setting: "Setting up the map"
+jap_resource_aluminium: "Aluminum tuning (Japan)"
+jap_resource_oil: "Setting up oil (Japan)"
+jap_resource_steel: "Steel Setting (Japan)"
+usa_map_setting: "Philippines Setting (USA)"
+mal_map_setting: "Malaya Setting (Britain)"
+saf_map_setting: "UAC Setting (Britain)"
+nzl_map_setting: "New Zealand Setting (Britain)"
+setting_focus: "Focus Settings"
+UNMOPTION_VICHY_DISABLED_DESC:0 "Vichy France will not be created after the surrender."
+UNMOPTION_VICHY_ALLOWED_DESC:0 "Vichy France will be created after the surrender of\nIn the game map of Africa - several new regions will be added."
+UNM_BISMARCK:0 "Construction of Bismarck (Germany)"
+#######################################################
+UN_DISABLED:0 "Disable"
+UN_ENABLED:0 "Enable"
+UN_VANILLA:0 "Vanilla"
+UN_NO_CHANGES:0 "No changes"
+NO_UN_TECHNOLOGY:0 "The technology will not be available"
+UN_DELL_ALL:0 "Delete all"
+UN_DELL:0 "Delete"
+UN_RULES_MOD:0 "UN Rules"
+UN_RULES_MOD_D:0 "Peace will be concluded in 6 months"
+NO_DEL_ALL_D:0 "The entire branch of strategic, tactical, heavy fighters is being deleted"
+NO_UN_TREITS:0 "Character traits will be unavailable"
+NO_DEL_ABILITIES_D:0 "This feature will not be available"
+SOV_CLOSED_ECO_YES_DC: "A closed economy with the benefits of free trade for the Soviet Union.\n§Y+7 initial factories outside the map"
+JAP_CLOSED_ECO_YES_DC: "A closed economy with the benefits of free trade for Japan.\n§Y+1 research cell"
+SOV_CLOSED_ECO_NO: "Vanilla"
+SOV_CLOSED_ECO_YES: "Closed economy"
+JAP_CLOSED_ECO_NO: "Vanilla"
+JAP_CLOSED_ECO_YES: "Closed economy"
+GER_INDUSTRIAL_VANILLA: "Do not add factories"
+GER_INDUSTRIAL_5: "Add 5 factories"
+GER_INDUSTRIAL_7: "Add 7 factories"
+GER_INDUSTRIAL_10: "Add 10 factories"
+GER_INDUSTRIAL_5_DC: "5 factories will be added outside the map"
+GER_INDUSTRIAL_7_DC: "7 factories will be added outside the map"
+GER_INDUSTRIAL_10_DC: "10 factories will be added outside the map"
+JAP_SLOT: "Add 1 research cell"
+JA_SLOT_DC: "Will be added 1 research cell"
+
+
+map_setting_usa_1: "Leave a puppet"
+map_setting_usa_2: "Transfer to the USA"
+map_setting_mal_2: "Transfer to Britain"
+map_setting_saf_2: "Transfer to Britain"
+map_setting_ast: "Transfer to Australia"
+map_setting_nzl: "Transfer to Britain"
+
+map_setting_usa_1_dc: "Philippines will get puppet status"
+map_setting_usa_2_dc: "USA will get control of the Philippines"
+map_setting_mal_2_dc: "Britain will get control of British Malaya"
+map_setting_saf_2_dc: "Britain will get control of South African Union"
+map_setting_ast_dc: "Australia will get control of New Zealand"
+map_setting_nzl_dc: "Britain will get control of New Zealand"
+
+###################################################
+###################################################
+###################################################
+
+aluminium_20_unm: "Add 43 aluminum"
+aluminium_20_dc: "43 aluminum will be added in the Chugoku region"
+##################################################
+aluminium_25_unm: "Add 54 aluminum"
+aluminium_25_dc: "65 aluminum will be added in the Chugoku region"
+###################################################
+aluminium_30_unm: "Add 65 aluminum"
+aluminium_30_dc: "65 aluminum will be added in the Chugoku region"
+###################################################
+aluminium_35_unm: "Add 76 aluminum"
+aluminium_35_dc: "76 aluminum will be added in the Chugoku region"
+##################################################
+aluminium_40_unm: "Add 86 aluminum"
+aluminium_40_dc: "86 aluminum will be added in the Chugoku region"
+
+###################################################
+###################################################
+###################################################
+
+oil_20_unm: "Add 43 oil"
+oil_20_dc: "43 oil will be added in the Kanto region"
+###################################################
+oil_25_unm: "Add 54 oil"
+oil_25_dc: "65 oil will be added in the Kanto region"
+##################################################
+oil_30_unm: "Add 65 oil"
+oil_30_dc: "65 oil will be added in the Kanto region"
+###################################################
+oil_35_unm: "Add 76 oil"
+oil_35_dc: "76 oil will be added in the Kanto region"
+###################################################
+oil_40_unm: "Add 86 oil"
+oil_40_dc: "86 oil will be added in the Kanto region"
+
+###################################################
+###################################################
+###################################################
+###################################################
+
+steel_20_unm: "Add 43 steel"
+steel_20_dc: "43 steel will be added in the Kansai region"
+##################################################
+steel_25_unm: "Add 54 steel"
+steel_25_dc: "43 steel will be added in Kansai region"
+###################################################
+steel_30_unm: "Add 65 steel"
+steel_30_dc: "65 steel will be added in Kansai region"
+###################################################
+steel_35_unm: "Add 76 steel"
+steel_35_dc: "76 steel will be added in Kansai region"
+##################################################
+steel_40_unm: "Add 86 steel"
+steel_40_dc: "86 steel will be added in Kansai region"
+
+###################################################
+###################################################
+###################################################
+
+###################################################
+###################################################
+###################################################
+
+ADD_2_F: "Add +2 factories"
+ADD_4_F: "Add +4 factories"
+ADD_6_F: "Add +6 factories"
+
+ADD_2_A: "Add +2 military factories"
+ADD_4_A: "Add +4 military factories"
+ADD_6_A: "Add +6 military factories"
+
+ADD_2_V: "Add +2 shipyards"
+ADD_4_V: "Add +4 shipyards"
+ADD_6_V: "Add +6 shipyards"
+
+###################################################
+###################################################
+###################################################
+
+ADD_2_F_ITA_P_1_2: "+2 factories will be added for the focus "Industrial development""
+ADD_2_F_ITA_P_1_4: "+4 factories will be added for the focus "Industrial development""
+ADD_2_F_ITA_P_1_6: "+6 factories will be added for the focus "Industrial development""
+
+ADD_2_A_ITA_P_2_2: "+2 military factories will be added for the focus "Industrial Development 2""
+ADD_4_A_ITA_P_2_4: "+4 military factories will be added for the focus "Industrial development 2""
+
+ADD_2_V_ITA_P_2_2: "+2 shipyards will be added for the focus "Our Sea""
+ADD_4_V_ITA_P_2_4: "+4 shipyards will be added for the focus "Our Sea""
+ADD_6_V_ITA_P_2_6: "+6 shipyards will be added for the focus "Our Sea""
+
+###################################################
+###################################################
+###################################################
+
+ADD_2_F_JAP_P_1_0: "+2 factories will be added for the focus "Zaibatsu direction""
+ADD_2_F_JAP_P_1_2: "+2 military factories will be added for the focus "Nationalization of industry""
+ADD_2_F_JAP_P_1_4: "+4 military factories will be added for the focus "Nationalization of industry""
+
+ADD_2_V_JAP_P_2_2: "+2 shipyards will be added for the "Fleet Revaluation" focus"
+ADD_4_V_JAP_P_2_4: "+4 shipyards will be added for the "Fleet Revaluation" focus"
+ADD_6_V_JAP_P_2_6: "+6 shipyards will be added for the "Fleet Revaluation" focus"
+
+###################################################
+###################################################
+###################################################
+
+PROM_1_ITA: "Industrial Development (Italy)"
+PROM_2_ITA: "Industrial Development 2 (Italy)"
+FOCUS_M_ITA: "Our Sea (Italy)"
+ND_JAP: "Zaibatsu Direction (Japan)"
+NP_JAP: "Nationalization of industry (Japan)"
+PF_JAP: "Revaluation of the fleet (Japan)"
+
+###################################################
+###################################################
+###################################################
+AIR_EDITION: "Cost of aviation"
+AIR_X2: "Increase the cost of aviation X2"
+AIR_X3: "Increase the cost of aviation X3"
+LIGHT_TANK_EDITION: "Cost of light tanks"
+LIGHT_TANK_10: "Increase cost by 10%"
+LIGHT_TANK_20: "Increase cost by 20%"
+LIGHT_TANK_30: "Increase cost by 30%"
+LIGHT_TANK_40: "Increase cost by 40%"
+LIGHT_TANK_50: "Increase cost by 50%"
+LIGHT_TANK_60: "Increase cost by 60%"
+LIGHT_TANK_70: "Increase cost by 70%"
+LIGHT_TANK_80: "Increase cost by 80%"
+LIGHT_TANK_90: "Increase cost by 90%"
+LIGHT_TANK_100: "Increase cost by 100%"
+MEDIUM_TANK_EDITION: "Cost of medium tanks"
+MEDIUM_TANK_10: "Increase cost by 10%"
+MEDIUM_TANK_20: "Increase cost by 20%"
+MEDIUM_TANK_30: "Increase cost by 30%"
+MEDIUM_TANK_40: "Increase cost by 40%"
+MEDIUM_TANK_50: "Increase cost by 50%"
+MEDIUM_TANK_60: "Increase cost by 60%"
+MEDIUM_TANK_70: "Increase cost by 70%"
+MEDIUM_TANK_80: "Increase cost by 80%"
+MEDIUM_TANK_90: "Increase cost by 90%"
+MEDIUM_TANK_100: "Increase cost by 100%"
+HEAVY_TANK_EDITION: "Cost of heavy tanks"
+HEAVY_TANK_10: "Increase cost by 10%"
+HEAVY_TANK_20: "Increase cost by 20%"
+HEAVY_TANK_30: "Increase cost by 30%"
+HEAVY_TANK_40: "Increase cost by 40%"
+HEAVY_TANK_50: "Increase cost by 50%"
+HEAVY_TANK_60: "Increase cost by 60%"
+HEAVY_TANK_70: "Increase cost by 70%"
+HEAVY_TANK_80: "Increase cost by 80%"
+HEAVY_TANK_90: "Increase cost by 90%"
+HEAVY_TANK_100: "Increase cost by 100%"
+TANK_100_DC: "The cost of tanks of this type increases by 2 times"
+UNM_PRODUCTION_COST: "Cost of production"
+
+
+###################################################
+###################################################
+###################################################
+ANTI_AIR_EDITION: "Air defense cost"
+ANTI_TANK_EDITION: "Cost of the anti-tank"
+ARTILLERY_EDITION: "Cost of artillery"
+UNM_X2: "Increase the cost by X2"
+
+
+###################################################
+###################################################
+###################################################
+UNM_SPEC_LIMIT: "Лимит спец.дивизии"
+LIMIT_336: "+336 батальонов спецназа"
+UNM_SPEC_LIMIT_336_DESC: "The special forces limit will be increased.

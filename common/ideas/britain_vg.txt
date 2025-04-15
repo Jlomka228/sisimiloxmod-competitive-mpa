@@ -1,0 +1,97 @@
+ideas = {
+
+	country = {
+		VG_eng_no_raj = {
+	
+			allowed = {
+				original_tag = ENG
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = generic_agrarian_society
+
+			removal_cost = -1
+	
+			modifier = {
+				conscription_factor = -0.35
+			}
+		}
+	}
+	country = {
+		VG_eng_weak_economy1 = {
+	
+			allowed = {
+				original_tag = ENG
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+	
+			modifier = {
+				
+			}
+		}
+	}
+	
+	country = {
+		VG_eng_weak_economy2 = {
+	
+			allowed = {
+				original_tag = ENG
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ENG
+						has_government = democratic 
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+
+			picture = SOV_second_five_year_plan
+
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_dockyard_factor = -10.0
+			}
+		}
+	}
+}

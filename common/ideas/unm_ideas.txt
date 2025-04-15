@@ -1,0 +1,658 @@
+ideas = {
+	country = {
+		FIN_negative_join_faction_desire = {
+			picture = generic_intel_bonus
+		
+			allowed_civil_war = { always = yes }
+		
+			removal_cost = -1
+		
+			rule = {
+				can_join_factions = no
+			}
+		}
+		VG_crushed_war_spirit = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_oppression
+			modifier = {
+				forced_surrender_limit = -10000
+			}
+		}
+		SOV_Collectivization_process = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = SOV_second_five_year_plan
+			modifier = {
+				consumer_goods_expected_value = -0.02
+			}
+		}
+		peacetime_training = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				OR = {
+					has_war = yes
+					is_ai=yes
+				}
+			}
+			removal_cost = -1
+			picture = air_war_plans_division_focus
+			modifier = {
+				
+				training_time_army_factor = -0.65 
+				mobilization_speed = 20.0
+				air_accidents_factor = -2
+				naval_accidents_chance = -2
+			}
+		}
+		Attache_to_china_VG = {
+			picture = generic_infantry_bonus 
+			
+			allowed = {
+			
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+		No_gereal_farm_VG = {
+
+	        picture = unm_hoi
+
+	    	allowed = {
+			
+	     	}
+
+	      	modifier = {
+			    experience_gain_factor = -1
+		    }
+		}
+		CAN_no_aisa_idea = {
+	
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT ={
+					has_government = communism
+				}
+			}
+			
+			picture = eng_special_air_service
+
+			removal_cost = -1
+	
+			modifier = {
+				special_forces_cap = 0.90
+			}
+		}
+		Ger_NoHun = {
+			name = no_hun
+
+			picture = generic_oppression
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+			
+			modifier = {
+				operative_slot = 1
+			}
+		}	
+	    ban_not_volunteer = {
+			picture = generic_air_bonus
+
+			allowed = {
+				
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = -1000
+				
+			} 
+		}
+	
+	all_not_volunteer = {
+			picture = air_war_plans_division_focus
+			allowed = {
+				
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+			    air_volunteer_cap = -1000
+				send_volunteer_size = -1000
+			} 
+		}
+	
+	
+		UNM_send_volunteer = {
+			picture = SPR_international_brigades
+
+			allowed = {
+				original_tag = SPR
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 3
+			} 
+		}
+		unm_neutrality_idea = {
+			
+			
+			allowed = {
+				always = no
+			}
+
+			picture = unm_hoi
+
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+	
+			modifier = {
+				conscription = -20
+				consumer_goods_factor = 1.5
+				ai_get_ally_desire_factor  = -1000
+				ai_join_ally_desire_factor = -1000
+				join_faction_tension = 1000
+				industrial_capacity_factory = -10
+				experience_gain_army = -1
+				political_power_gain = -100
+				command_power_gain = -10
+				industrial_capacity_dockyard = -3
+			}
+		}
+		no_training = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = unm_hoi
+			modifier = {
+				experience_gain_army = -1
+				training_time_factor = 1000
+				political_power_gain = -1000
+			}
+		}
+		
+		HEAVY_TANK_10_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_20_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.2
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_30_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.3
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_40_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.4
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_50_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.5
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_60_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.6
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_70_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.7
+				}
+			}
+		}
+		HEAVY_TANK_80_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.8
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_90_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 0.9
+					instant = yes
+				}
+			}
+		}
+		HEAVY_TANK_100_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					heavy_tank_chassis = {
+					build_cost_ic = 1
+					instant = yes
+				}
+			}
+		}
+########################################################################
+########################################################################
+########################################################################
+########################################################################
+		MEDIUM_TANK_10_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_20_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.2
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_30_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.3
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_40_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.4
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_50_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.5
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_60_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.6
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_70_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.7
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_80_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.8
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_90_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 0.9
+					instant = yes
+				}
+			}
+		}
+		MEDIUM_TANK_100_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					medium_tank_chassis = {
+					build_cost_ic = 1
+					instant = yes
+				}
+			}
+		}
+########################################################################
+########################################################################
+########################################################################
+########################################################################
+		LIGHT_TANK_10_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.1
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_20_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.2
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_30_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.3
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_40_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.4
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_50_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.5
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_60_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.6
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_70_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.7
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_80_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.8
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_90_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 0.9
+					instant = yes
+				}
+			}
+		}
+		LIGHT_TANK_100_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					light_tank_chassis = {
+					build_cost_ic = 1
+					instant = yes
+				}
+			}
+		}
+		ANTI_AIR_X2_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					anti_air_equipment = {
+						build_cost_ic = 1
+						instant = yes
+				}
+			}
+		}
+		ANTI_TANK_X2_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}	
+				equipment_bonus = {
+					anti_tank_equipment = {
+						build_cost_ic = 1
+						instant = yes
+				}
+			}
+		}
+		ALTILLERY_X2_IDEA = {
+			picture = unm_hoi
+
+			allowed = {
+				always = yes
+			}
+				equipment_bonus = {
+					artillery_equipment = {
+						build_cost_ic = 1
+						instant = yes
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = 1
+					instant = yes
+				}
+			}
+		}
+		spec_limit_336 = {
+		
+			picture = unm_hoi
+			
+			allowed = {
+				always = yes
+			}
+			allowed_civil_war = {
+				always = yes
+			}			
+			
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_min = 336
+			}
+	    }  
+	}
+}

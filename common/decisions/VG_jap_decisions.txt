@@ -1,0 +1,339 @@
+JAP_annex = {
+	
+	JAP_annex_man = {
+
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = MAN
+				exists = yes
+			}
+			MAN = { is_ai = yes }	
+			#NOT = { country_exists = CHI }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = MAN
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = MAN }
+			every_state = {
+				limit = {
+					is_core_of = MAN
+					is_controlled_by = JAP
+					}
+				set_compliance = 100
+			}			
+		}
+	}	
+	JAP_annex_sia = {
+
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = SIA
+				exists = yes
+			}
+			SIA = { is_ai = yes }	
+			SIA = { is_subject = no }
+			NOT = { country_exists = CHI }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = SIA
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			add_research_slot = 1
+			annex_country = { target = SIA }
+			every_state = {
+				limit = {
+					is_core_of = SIA
+					is_controlled_by = JAP
+					}
+				set_compliance = 100
+			}			
+		}
+	}
+
+	JAP_puppet_sia = {
+
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = SIA
+				exists = yes
+			}
+			SIA = { is_ai = no }
+				OR = {
+					NOT = { country_exists = CHI }
+					CHI = { is_subject_of = JAP }
+				}	
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = SIA
+				}
+			}
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			#JAP = { puppet = SIA }
+			set_autonomy = {
+				target = SIA
+				autonomous_state = autonomy_wtt_imperial_protectorate
+			}			
+		}
+	}
+	
+	JAP_VG_China_War_slow = {
+
+		icon = generic_army_support
+
+		allowed = {
+			original_tag = JAP
+		}
+		
+		available = { 
+				has_country_flag = ITA_victory_in_ethiopia_flag
+		}
+
+		days_mission_timeout = 270
+
+		activation = {
+			always = no
+		}
+		
+		timeout_effect = {
+		    JAP = {
+				add_threat = 25 
+				annex_country = { target = CHI }
+				every_state = {
+					limit = {
+						is_core_of = CHI
+						is_controlled_by = JAP
+						}
+					set_compliance = 100
+				}
+				JAP_kanji_ishiwara = {
+					promote_leader = yes
+					add_skill_level = 6
+					add_unit_leader_trait = trickster
+					add_unit_leader_trait = organizer
+					add_unit_leader_trait = panzer_leader
+					add_unit_leader_trait = urban_assault_specialist
+					add_unit_leader_trait = trait_mountaineer
+					add_unit_leader_trait = skilled_staffer
+				}
+				JAP_toshizo_nishio = {
+					promote_leader = yes
+					add_skill_level = 3
+					add_unit_leader_trait = trickster
+					add_unit_leader_trait = organizer
+					add_unit_leader_trait = panzer_leader
+					add_unit_leader_trait = hill_fighter
+					add_unit_leader_trait = winter_specialist
+					add_unit_leader_trait = skilled_staffer
+				}
+				JAP_shizuichi_tanaka = {
+					promote_leader = yes
+					add_skill_level = 2
+					add_unit_leader_trait = trickster
+					add_unit_leader_trait = organizer
+					add_unit_leader_trait = infantry_leader
+					add_unit_leader_trait = trait_mountaineer
+				}
+			}
+		}
+	}
+
+	JAP_VG_China_War_start = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			always = no
+		}
+		complete_effect = {
+			add_threat = 20
+			country_event = { id = news.1 }
+		}
+	}
+	
+	JAP_VG_China_War_fast = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = JAP
+		}
+		
+		available = { #GOAL
+			OR = {
+				has_country_flag = ITA_victory_in_ethiopia_flag
+				count_triggers = {
+					amount = 2
+					# 841 = { is_controlled_by = ROOT }
+					# 842 = { is_controlled_by = ROOT }
+					# 843 = { is_controlled_by = ROOT }
+					controls_province = 1984
+					controls_province = 2072
+					controls_province = 5097
+				}
+			}
+		}
+
+
+		days_mission_timeout = 120
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			always = no
+		}
+		
+		timeout_effect = {
+		    JAP = {
+				add_threat = 25 
+				annex_country = { target = CHI }
+				every_state = {
+					limit = {
+						is_core_of = CHI
+						is_controlled_by = JAP
+						}
+					set_compliance = 100
+				}
+				JAP_kanji_ishiwara = {
+					promote_leader = yes
+					add_skill_level = 4
+					add_unit_leader_trait = organizer  
+					add_unit_leader_trait = panzer_leader
+					add_unit_leader_trait = skilled_staffer
+				}
+				JAP_toshizo_nishio = {
+					promote_leader = yes
+					add_skill_level = 2
+					add_unit_leader_trait = organizer  
+					add_unit_leader_trait = panzer_leader
+					add_unit_leader_trait = skilled_staffer
+				}
+				JAP_shizuichi_tanaka = {
+					promote_leader = yes
+					add_skill_level = 1
+					add_unit_leader_trait = organizer 
+					add_unit_leader_trait = infantry_leader
+				}
+		    }
+		}
+	}
+	
+	Jap_vg_noasia1 = {
+	
+		icon = generic_army_support
+		
+		visible = {
+			has_global_flag = no_asia_game
+		}
+
+		available = {
+			date > 1937.11.1
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+            add_threat = 20
+			country_event = { id = news.1 }
+        }		
+	}
+	Jap_vg = {
+	
+		icon = generic_army_support
+
+		available = {
+			date > 1938.3.1
+		}
+		
+		allowed = {
+			original_tag = JAP
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = JAP
+			date > 1938.03.1
+		}
+		complete_effect = {
+			add_named_threat = { threat = 15 name = JAP_secure_china }
+			USA = { add_war_support = 0.05 }
+		}				
+	}
+	Jap_vg_noasia3 = {
+	
+		icon = generic_army_support
+		
+		visible = {
+			has_global_flag = no_asia_game
+		}
+
+		available = {
+			date > 1938.8.1
+		}
+		
+		ai_will_do = {
+			base = 10
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+            add_threat = 25
+        }		
+	}
+}

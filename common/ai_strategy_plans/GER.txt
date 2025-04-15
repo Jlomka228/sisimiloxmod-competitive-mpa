@@ -1,0 +1,233 @@
+German_historical = {
+	name = "German historical plan"
+	desc = "Essentially historical behaviour for Germany"
+
+	allowed = {
+		original_tag = GER
+	}
+	enable = {
+		or = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					not = { has_dlc = "Waking the Tiger" }
+					has_game_rule = {
+						rule = GER_ai_behavior
+						option = DEFAULT
+					}
+				}	
+			}
+			has_country_flag = GER_AI_RANDOM_FASCIST
+			has_game_rule = {
+				rule = GER_ai_behavior
+				option = FASCIST
+			}
+		}
+	}
+	abort = {
+		OR = {
+			SWE = {
+				has_government = communism #prio 1, crush Sweden
+			}
+			SOV = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			ENG = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			any_country_with_original_tag = {
+				original_tag_to_check = HUN
+				has_completed_focus = HUN_invite_the_habsburg_prince
+			}
+			any_country_with_original_tag = {
+				original_tag_to_check = FRA
+				OR = {
+					has_completed_focus = FRA_utilize_the_leagues
+					has_completed_focus = FRA_invite_communist_ministers
+					has_completed_focus = FRA_leftist_rhetoric
+					has_completed_focus = FRA_right_wing_rhetoric
+				}
+			}
+			any_country_with_original_tag = {
+				original_tag_to_check = USA
+				OR = {
+					has_completed_focus = USA_war_plan_red
+					has_completed_focus = USA_war_plan_white
+				}
+			}
+		}
+	}
+
+	ai_national_focuses = {
+		# grab as fast as you can if available
+		GER_around_maginot
+
+		GER_rhineland #70
+		GER_army_innovation #70
+		GER_air_innovation #70
+		GER_four_year_plan #70
+		GER_autarky #70
+		GER_hermann_goring_werke #15
+		#1937
+		#GER_hermann_goring_werke 55
+		GER_kdf_wagen #70
+		GER_extra_tech_slot #70
+		GER_autobahn #35
+		GER_anschluss #70
+		GER_demand_sudetenland #65
+		#1938
+		#GER_demand_sudetenland 5
+		GER_first_vienna_award #7
+		GER_end_of_czechoslovakia #70
+		GER_second_vienna_award #7
+		GER_grosraumwirtschaft #70
+		GER_align_romania #1
+		GER_align_hungary #1
+		GER_integrate_war_economies #70
+		GER_demand_memel #70
+		GER_coal_liquidization #64
+		#1939 
+		#GER_coal_liquidization 6
+		GER_synthetic_rubber #35
+		GER_soviet_treaty #70
+		GER_japan_friend #35
+		GER_west_wall #35
+		GER_mol_rib_pact #70
+		GER_danzig_or_war #7
+		GER_weserubung #7
+		GER_war_with_france #7
+		GER_army_innovation_2 #70
+		GER_anti_comitern_pact #7
+		GER_air_innovation_2 #51
+		#1940
+		#GER_air_innovation_2 19
+		GER_opration_tannenbaum #35
+		GER_naval_rearmament #35
+		GER_naval_effort #35
+		GER_naval_effort2 #35
+		GER_u_boat_effort #35
+		GER_trade_interdiction #35
+		GER_modular_construction #70
+		GER_atlantikwall #31
+		#1941
+		#GER_atlantikwall 4
+		GER_tactical_air_effort #70
+		GER_naval_air_effort #70
+		GER_ussr_war_goal #7
+		GER_rocketry_focus #70
+		GER_wunderwaffe #70
+	} 
+	research = {
+		infantry_weapons = 50.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+	ideas = {
+		hjalmar_schacht = 10
+	}
+
+	traits = {
+		captain_of_industry = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = medium_armor
+		value = 111
+	}
+
+	focus_factors = {
+		GER_rhineland = 1.0
+	}
+
+}
+GER_minor_allies = { #used to make minor European nations like Axis more
+	name = "Minor German Allies"
+
+	allowed = {
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+		}
+	}
+	enable = {
+		OR = {
+			has_government = fascism
+			fascism > 0.5
+		}
+		is_in_faction = no
+		GER = {
+			has_government = fascism
+		}
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+		}
+	}
+	abort = {
+		GER = {
+			NOT = {
+				has_government = fascism
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "JAP"
+		value = -500
+	}
+}

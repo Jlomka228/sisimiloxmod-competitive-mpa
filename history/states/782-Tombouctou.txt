@@ -1,0 +1,22 @@
+
+STATE={
+	id=782
+	name="STATE_782" # Tombouctou
+	manpower = 1
+	
+	STATE_category = wasteland
+
+	history={
+		
+		buildings = {
+			infrastructure = 0
+		}
+
+	}
+
+	provinces={
+		1115 2068 10725 10868
+	}
+
+	local_supplies=0.0 
+}

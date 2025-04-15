@@ -1,0 +1,211 @@
+GER_annex = {	
+	
+}
+GER_grind = {
+		
+	GER_xp_cw = {
+
+		icon = generic_army_support
+
+		available = {
+				
+		}
+		
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			army_experience = 250
+		}
+	}	
+	
+}
+
+GER_un = {
+
+    GER_execute_war_plan_Fall_Rot = {
+		icon = generic_operation
+		available = {
+			has_war_with = FRA
+			16 = { is_controlled_by = FRA }
+			date > 1940.3.1
+			date < 1941.6.22
+		}
+		visible = {
+		date < 1941.6.22
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		targeted_modifier = {
+			tag = FRA
+			attack_bonus_against = 1
+			defense_bonus_against = 1
+		}
+		complete_effect = {
+			FRA = {
+				annex_country = { target = BEL transfer_troops = yes }
+				every_state = {
+					limit = { is_core_of = BEL }
+					add_core_of = ROOT
+				}
+				BEL = {
+					every_unit_leader = {
+						set_nationality = FRA
+					}
+				}
+            }
+        }	
+	}
+
+	GER_un_annex_HUN = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = HUN
+				exists = yes
+			}
+			date > 1939.1.1
+                        HUN = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = HUN
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+            annex_country = { target = HUN transfer_troops = yes }
+            every_state = {
+                limit = { is_core_of = HUN }
+                add_core_of = ROOT
+            }
+            HUN = {
+                every_unit_leader = {
+                set_nationality = GER
+                }
+            }
+			set_technology = {
+                improved_medium_airframe =1
+            }
+		     modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 2
+            }
+			GER = {
+	    	add_ideas = Ger_NoHun	
+			}
+        }		
+	}
+
+
+	GER_un_annex_BUL = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = BUL
+				exists = yes
+			}
+			date > 1938.1.1 
+                        BUL = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = BUL
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = BUL transfer_troops = yes }
+			every_state = {
+                limit = { is_core_of = bul }
+                add_core_of = ROOT
+            }
+		}			
+	}
+	Jap_war_expirience_axis_and_sov = {
+
+		icon = generic_civil_support
+
+		allowed = {
+			original_tag = GER
+		}
+
+		#Fail trigger
+		available = {
+			date > 1938.9.1
+			original_tag = GER
+		}
+
+		days_mission_timeout = 1
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			original_tag = GER
+			date > 1938.9.1
+		}
+		complete_effect = {
+			GER = {
+				army_experience = 150
+			}
+			ROM = {
+				army_experience = 150
+			}
+			BUL = {
+				army_experience = 150	
+			}
+			HUN = {
+				air_experience = 350	
+			}
+			ITA = {
+				army_experience = 250	
+			}
+			SOV = {
+				army_experience = 200
+			}
+			RAJ = {
+				army_experience = 100
+			}
+			CAN = {
+				army_experience = 100
+			}
+			AST = {
+				army_experience = 100
+			}
+			SAF = {
+				army_experience = 100
+			}
+			NZL = {
+				army_experience = 100
+			}
+			USA = {
+				army_experience = 100
+			}
+			FRA = {
+				army_experience = 100
+			}
+		}
+	}
+}
+

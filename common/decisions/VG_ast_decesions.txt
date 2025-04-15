@@ -1,0 +1,113 @@
+AST_unm = {
+
+AST_annex_NZL = {
+
+        icon = generic_army_support
+
+        available = {
+            any_other_country = {
+                original_tag = NZL
+                exists = yes
+            }
+            NZL = { is_ai = YES }
+        }
+
+        target_trigger = {
+            FROM = {
+                OR = {
+                    original_tag = NZL
+                }
+            }
+        }
+
+        fire_only_once = yes
+        days_remove    = -1
+
+        complete_effect = {
+            annex_country = { target = NZL transfer_troops = yes }
+            every_state = {
+                limit = { is_core_of = NZL }
+                add_core_of = ROOT
+            }
+            NZL = {
+                every_unit_leader = {
+                set_nationality = AST
+                }
+            }
+        }
+    }
+	
+	AST_unm_annex_CAN = {
+	
+		icon = generic_army_support
+
+		available = {
+			any_other_country = {
+				original_tag = CAN
+				exists = yes
+			}
+			date > 1938.1.1 
+			CAN = { is_ai = yes }
+		}
+
+		target_trigger = {
+			FROM = {
+				OR = {
+					original_tag = CAN
+				}
+			}
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			annex_country = { target = CAN transfer_troops = yes }
+			CAN = {
+                every_unit_leader = {
+                set_nationality = AST
+                }
+            }
+			every_state = {
+				limit = {
+					is_core_of = CAN
+					is_controlled_by = AST
+					}
+				AST = {
+				    add_state_core = PREV
+				}
+			}			
+		}
+	}
+	AST_unm_annex_CAN2 = {
+	
+		icon = generic_army_support
+
+		available = {
+			date > 1938.1.1 
+			276 = {
+				controller = {
+					NOT = {
+						tag = CAN
+					}
+				}
+			}
+			date > 1941.06.1 
+		}
+
+		fire_only_once = yes
+		days_remove    = -1
+		
+		complete_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 12
+				instant_build = yes
+			}
+			add_offsite_building = {
+				type = industrial_complex
+				level = 7
+				instant_build = yes
+			}		
+		}
+	}

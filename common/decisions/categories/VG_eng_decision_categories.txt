@@ -1,0 +1,34 @@
+ENG_unm = {
+	icon = generic_monarchism
+
+	picture = GFX_decision_cat_PB_ENG_Imperial_Management_Picture
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_annex_unm = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_PB_AME_Bleeding_South
+
+	allowed = {
+		original_tag = ENG
+	}
+}
+
+ENG_annex_unm_rip = {
+
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_PB_AME_Bleeding_South
+
+	allowed = {
+		original_tag = ENG
+	}
+	visible = {
+		has_war_with = UNM
+	}
+}

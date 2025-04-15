@@ -1,0 +1,36 @@
+
+SPR_civil_war_win_rn = {
+
+	SPA_win_war_rn = {
+
+		icon = hol_draw_up_staff_plans
+
+		allowed = {
+			original_tag = SPR
+		}
+
+		available = {
+			date > 1938.10.01
+			has_government = fascism
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = SPR
+			has_global_flag = spanish_civil_war
+			NOT = { has_global_flag = scw_over }
+		}
+
+		complete_effect = {
+			add_ideas = SPR_winwars
+		}
+
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+}

@@ -1,0 +1,86 @@
+AST_historical = {
+	name = "Australian historical plan"
+	desc = ""
+
+	allowed = {
+		original_tag = AST
+		has_dlc = "Together for Victory"
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				has_game_rule = {
+					rule = AST_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = AST_AI_RANDOM_DEMOCRATIC_HISTORICAL 
+			has_game_rule = {
+				rule = AST_ai_behavior
+				option = DEMOCRATIC_HISTORICAL
+			}
+			has_country_flag = britain_enforced_our_loyalty
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		AST_standard_gauge_railway						#35
+		AST_western_australian_government_railways		#70
+		AST_south_australian_housing_trust				#105
+		AST_expand_lithgow_small_arms_factory			#140
+		AST_department_of_supply_and_development		#175
+		AST_allied_works_council						#245
+		AST_australian_arms_production					#270
+		AST_support_the_policy_of_appeasement			#305
+		AST_strengthen_ties_with_uk						#340
+		AST_adopt_westminster							#410
+		AST_CSIR										#480
+		AST_cockatoo_island_shipyards					#550
+		AST_industries_assistance_corporation			#620
+		AST_additional_militia_training					#655
+		AST_promote_reservists							#690
+		AST_establish_advisory_war_council				#760
+		AST_national_security_act						#795
+		AST_invest_in_victory							#865
+		AST_rationing_and_recycling						#935
+		AST_squash_the_squanderbugs						#
+		AST_civil_construction_corps					#
+		AST_fight_work_or_perish						#
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+		dd_tech = 5
+	}
+
+	ideas = {
+		
+	}
+
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}
+

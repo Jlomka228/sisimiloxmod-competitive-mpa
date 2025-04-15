@@ -1,0 +1,588 @@
+on_actions = {
+    on_startup = {
+		effect = {
+			every_country={
+				limit = { 
+					NOT = {
+						OR = {
+							is_ai = yes
+							has_war = yes
+							has_idea = peacetime_training 
+						}
+					} 
+				}
+				add_ideas = peacetime_training
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = sov_closed_eco option = yes }
+				}
+				SOV = { add_ideas = UNM_sov_closed_eco }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_closed_eco option = yes }
+				}
+				JAP = { add_ideas = UNM_jap_closed_eco }
+				JAP = { add_research_slot = 1 }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_closed_eco option = r_slot }
+				}
+				JAP = { add_research_slot = 1 }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ger_industrial_complex_unm option = ger_5 }
+				}
+				GER = { add_offsite_building = { type = industrial_complex level = 5 } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ger_industrial_complex_unm option = ger_7 }
+				}
+				GER = { add_offsite_building = { type = industrial_complex level = 7 } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ger_industrial_complex_unm option = ger_10 }
+				}
+				GER = { add_offsite_building = { type = industrial_complex level = 10 } }
+			}
+			#################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_20 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 20 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_25 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 25 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_30 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 30 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_35 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 35 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_aluminium option =  aluminium_40 }
+				}
+				JAP = { 529= { add_resource = { type = aluminium amount = 40 } } }
+			}
+			#################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_20 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 20 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_25 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 25 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_30 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 30 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_35 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 35 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_oil option =  oil_40 }
+				}
+				JAP = { 282= { add_resource = { type = oil amount = 40 } } }
+			}
+			#################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_20 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 20 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_25 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 25 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_30 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 30 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_35 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 35 } } }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = jap_resource_steel option =  steel_40 }
+				}
+				JAP = { 531= { add_resource = { type = steel amount = 40 } } }
+			}
+
+			if = {
+                limit = {
+					has_game_rule = { rule = usa_map_setting option = yes }
+				}
+                USA = {annex_country = {target = PHI transfer_troops = no} }
+				327 = { set_compliance = 100 }
+				623 = { set_compliance = 100 }
+				624 = { set_compliance = 100 }
+				625 = { set_compliance = 100 }
+				626 = { set_compliance = 100 }
+				627 = { set_compliance = 100 }
+				628 = { set_compliance = 100 }
+            }
+			if = {
+                limit = {
+					has_game_rule = { rule = mal_map_setting option = yes }
+				}
+				ENG = {annex_country = {target = MAL transfer_troops = no} }
+				336 = { set_compliance = 100 }
+				333 = { set_compliance = 100 }
+            }
+			if = {
+                limit = {
+					has_game_rule = { rule = saf_map_setting option = yes }
+				}
+				ENG = {annex_country = {target = SAF transfer_troops = no} }
+				541 = { set_compliance = 100 }
+				681 = { set_compliance = 100 }
+				275 = { set_compliance = 100 }
+				719 = { set_compliance = 100 }
+            }
+			if = {
+                limit = {
+					has_game_rule = { rule = nzl_map_setting option = nzl_eng }
+				}
+				ENG = {annex_country = {target = NZL transfer_troops = no} }
+				284 = { set_compliance = 100 }
+				723 = { set_compliance = 100 }
+				726 = { set_compliance = 100 }
+            }
+			if = {
+                limit = {
+					has_game_rule = { rule = nzl_map_setting option = nzl_ast }
+				}
+				AST = {annex_country = {target = NZL transfer_troops = no} }
+				284 = { set_compliance = 100 }
+				723 = { set_compliance = 100 }
+				726 = { set_compliance = 100 }
+            }
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_10_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_10_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_20_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_20_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_30_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_30_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_40_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_40_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_50_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_50_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_60_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_60_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_70_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_70_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_80_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_80_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_90_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_90_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_heavy_tank_edition option = UNM_HEAVY_TANK_100_ON }
+				}
+				every_country = { add_ideas = HEAVY_TANK_100_IDEA }
+			}
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_10_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_10_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_20_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_20_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_30_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_30_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_40_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_40_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_50_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_50_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_60_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_60_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_70_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_70_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_80_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_80_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_90_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_90_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_medium_tank_edition option = UNM_MEDIUM_TANK_100_ON }
+				}
+				every_country = { add_ideas = MEDIUM_TANK_100_IDEA }
+			}
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_10_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_10_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_20_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_20_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_30_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_30_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_40_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_40_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_50_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_50_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_60_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_60_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_70_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_70_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_80_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_80_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_90_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_90_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = ung_light_tank_edition option = UNM_LIGHT_TANK_100_ON }
+				}
+				every_country = { add_ideas = LIGHT_TANK_100_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = air_edition option = UNM_AIR_X2_ON }
+				}
+				every_country = { add_ideas = AIR_X2_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = air_edition option = UNM_AIR_X3_ON }
+				}
+				every_country = { add_ideas = AIR_X3_IDEA }
+			}
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = anti_air_edition option = UNM_ANTI_AIR_X2_ON }
+				}
+				every_country = { add_ideas = ANTI_AIR_X2_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = anti_tank_edition option = UNM_ANTI_TANK_X2_ON }
+				}
+				every_country = { add_ideas = ANTI_TANK_X2_IDEA }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = artillery_edition option = UNM_ARTILLERY_X2_ON }
+				}
+				every_country = { add_ideas = ALTILLERY_X2_IDEA }
+			}
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			if = {
+				limit = {
+					has_game_rule = { rule = unm_spec_limit option = UNM_SPEC_LIMIT_336 }
+				}
+				every_country = { add_ideas = spec_limit_336 }
+			}
+			if = {
+				limit = {
+					has_game_rule = { rule = VG_volunteers option = VG_ALL_NOT_VOLUNTEERS }
+				}
+				JAP = { add_ideas = all_not_volunteer }
+				SOV = { add_ideas = ban_not_volunteer }
+				GER = { add_ideas = ban_not_volunteer }
+				ITA = { add_ideas = ban_not_volunteer }
+				HUN = { add_ideas = ban_not_volunteer }
+				BUL = { add_ideas = ban_not_volunteer }
+				ROM = { add_ideas = ban_not_volunteer }
+			}
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			################################################################################
+			if = {
+				SWI = { add_ideas = unm_neutrality_idea }
+				SWE = { add_ideas = unm_neutrality_idea }
+				TUR = { add_ideas = unm_neutrality_idea }
+				PER = { add_ideas = unm_neutrality_idea }
+				BRA = { add_ideas = unm_neutrality_idea }
+				VEN = { add_ideas = unm_neutrality_idea }
+				UNM = { add_ideas = unm_neutrality_idea }
+				CUB = { add_ideas = unm_neutrality_idea }
+				IRE = { add_ideas = unm_neutrality_idea }
+				MEX = { add_ideas = unm_neutrality_idea }
+				IRQ = { add_ideas = unm_neutrality_idea }
+				GRE = { add_ideas = no_training }
+				
+				ALB = { add_ideas = no_training }
+				POL = { add_ideas = no_training }
+				LIT = { add_ideas = no_training }
+				LAT = { add_ideas = no_training }
+				EST = { add_ideas = no_training }
+				
+				DEN = { add_ideas = no_training }
+				NOR = { add_ideas = no_training }
+				
+				ETH = { add_ideas = no_training }
+				HOL = { add_ideas = no_training }
+				BEL = { add_ideas = no_training }
+				AUS = { add_ideas = no_training }
+				YUG = { add_ideas = no_training }
+				MON = { add_ideas = no_training }
+				CZE = { add_ideas = no_training }
+				SIA = { add_ideas = no_training }
+				
+				
+			}
+		}
+	}
+	on_monthly = {
+				effect = {
+					every_country = {
+						limit = {
+							OR = {
+								AND = {
+									has_tech = mobile_warfare
+									has_tech = superior_firepower
+								}
+								AND = {
+									has_tech = mobile_warfare
+									has_tech = trench_warfare
+								}
+								AND = {
+									has_tech = mobile_warfare
+									has_tech = mass_assault
+								}
+								AND = {
+									has_tech = trench_warfare
+									has_tech = mass_assault
+								}
+								AND = {
+									has_tech = trench_warfare
+									has_tech = superior_firepower
+								}
+								AND = {
+									has_tech = superior_firepower
+									has_tech = mass_assault
+								}
+							}
+						}
+						set_technology = {
+							mobile_warfare = 0
+							superior_firepower = 0
+							trench_warfare = 0
+							mass_assault = 0
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								AND = {
+									has_tech = air_superiority
+									has_tech = formation_flying
+								}
+								AND = {
+									has_tech = air_superiority
+									has_tech = force_rotation
+								}
+								AND = {
+									has_tech = formation_flying
+									has_tech = force_rotation
+								}
+							}
+						}
+						set_technology = {
+							air_superiority = 0
+							formation_flying = 0
+							force_rotation = 0
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								AND = {
+									has_tech = fleet_in_being
+									has_tech = trade_interdiction
+								}
+								AND = {
+									has_tech = fleet_in_being
+									has_tech = base_strike
+								}
+								AND = {
+									has_tech = trade_interdiction
+									has_tech = base_strike
+								}
+							}
+						}
+						set_technology = {
+							fleet_in_being = 0
+							trade_interdiction = 0
+							base_strike = 0
+						}
+					}
+					every_country={
+						limit = { 
+							NOT = {
+								OR = {
+									is_ai = yes
+									has_war = yes
+									has_idea = peacetime_training 
+								}
+							} 
+						}
+						add_ideas = peacetime_training
+					}
+				}
+			}
+}

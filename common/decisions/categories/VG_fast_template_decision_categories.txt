@@ -1,0 +1,8 @@
+VG_fast_templates = {
+	allowed = {
+		
+	}
+	visible = {
+
+	}
+}
