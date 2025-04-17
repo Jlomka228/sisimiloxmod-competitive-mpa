@@ -3,7 +3,8 @@ STATE={
 	name="STATE_216"
 	
 	STATE_category = rural
-
+    impassable = yes
+	
 	history={
 		owner = SOV
 		victory_points = {

@@ -1,17 +1,17 @@
 STATE={
 	id=676
 	name="STATE_676"
-	manpower = 1182741
+	manpower = 1
 	
 	STATE_category = town
 	
 	resources={
-		oil=8 # was: 10
+		oil=8 
 	}
 
 
 	history={
-		owner = IRQ
+		owner = ENG
 		buildings = {
 			infrastructure = 2
 		}
@@ -24,7 +24,7 @@ STATE={
 		victory_points = {
 			6826 1
 		}
-		add_core_of = IRQ
+		add_core_of = ENG
 	}
 	
 	provinces={

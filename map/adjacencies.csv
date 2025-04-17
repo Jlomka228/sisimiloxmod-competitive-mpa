@@ -212,6 +212,36 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12960;13292;sea;2580;-1;-1;-1;-1;;Falklands
 7683;13293;sea;8642;-1;-1;-1;-1;;Cote Nord
 8198;13295;sea;5473;-1;-1;-1;-1;;Aysen
+7491;1521;impassable;-1;-1;-1;-1;-1;;iran18
+12359;10351;impassable;-1;-1;-1;-1;-1;;iran17
+4473;10454;impassable;-1;-1;-1;-1;-1;;iran16
+9715;10454;impassable;-1;-1;-1;-1;-1;;iran15
+4660;4825;impassable;-1;-1;-1;-1;-1;;iran14
+6997;4755;impassable;-1;-1;-1;-1;-1;;iran13
+4958;2000;impassable;-1;-1;-1;-1;-1;;iran12
+7560;2000;impassable;-1;-1;-1;-1;-1;;iran11
+7491;5029;impassable;-1;-1;-1;-1;-1;;iran10
+12333;1521;impassable;-1;-1;-1;-1;-1;;iran9
+10510;10351;impassable;-1;-1;-1;-1;-1;;iran8
+12359;7602;impassable;-1;-1;-1;-1;-1;;iran7
+6997;1636;impassable;-1;-1;-1;-1;-1;;iran6
+4660;4755;impassable;-1;-1;-1;-1;-1;;iran5
+9715;4825;impassable;-1;-1;-1;-1;-1;;iran4
+11704;10454;impassable;-1;-1;-1;-1;-1;;iran3
+12434;10454;impassable;-1;-1;-1;-1;-1;;iran2
+4473;4901;impassable;-1;-1;-1;-1;-1;;iran1
+9575;9559;impassable;-1;-1;-1;-1;-1;;mazhino
+9575;11502;impassable;-1;-1;-1;-1;-1;;mazhino
+11531;11502;impassable;-1;-1;-1;-1;-1;;mazhino
+11531;3629;impassable;-1;-1;-1;-1;-1;;mazhino
+11531;549;impassable;-1;-1;-1;-1;-1;;mazhino
+563;549;impassable;-1;-1;-1;-1;-1;;mazhino
+3558;549;impassable;-1;-1;-1;-1;-1;;mazhino
+6542;549;impassable;-1;-1;-1;-1;-1;;mazhino
+6542;9503;impassable;-1;-1;-1;-1;-1;;mazhino
+6712;9503;impassable;-1;-1;-1;-1;-1;;mazhino
+6712;6529;impassable;-1;-1;-1;-1;-1;;mazhino
+11640;678;impassable;-1;-1;-1;-1;-1;;mazhino
 13307;13296;sea;9009;-1;-1;-1;-1;;Chubut
 12954;13297;sea;5424;-1;-1;-1;-1;;Araucania
 13312;7982;sea;2919;-1;-1;-1;-1;;South Iran

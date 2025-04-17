@@ -1,6 +1,9 @@
 STATE={
 	id=215
 	name="STATE_215"
+	
+	impassable = yes 
+	
 	resources={
 		steel=30 # was: 52.000
 	}

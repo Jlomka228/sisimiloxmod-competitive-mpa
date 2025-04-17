@@ -3,6 +3,7 @@ STATE = {
 	name = "STATE_735"
 
 	STATE_category = town
+    impassable = yes
 
 	history = {
 		owner = FRA
