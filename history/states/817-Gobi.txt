@@ -6,7 +6,7 @@ STATE={
 	}
 
 	history={
-		owner = MON
+		
 		buildings = {
 			infrastructure = 1
 		}

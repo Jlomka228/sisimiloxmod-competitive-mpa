@@ -3,12 +3,12 @@ STATE=
 {
 	id=134
 	name="STATE_134"
-	manpower = 667100
+	manpower = 1
 	
 	STATE_category = town
 
 	history= {
-		owner = ENG
+		
 		victory_points = {
 			9303 3 #Galway
 		}

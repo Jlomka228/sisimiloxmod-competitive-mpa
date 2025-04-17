@@ -9,7 +9,7 @@ STATE={
 	
 	history=
 	{	1936.1.1.13 = { owner = }
-		owner = CHI
+		
 		add_core_of = CHI
 		add_core_of = CHI
 		add_core_of = CHI
@@ -29,7 +29,7 @@ STATE={
 
 		}
 	}
-	manpower=500000
+	manpower=1
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 
