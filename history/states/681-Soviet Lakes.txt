@@ -2,12 +2,12 @@
 STATE={
 	id=681
 	name="STATE_681" # Cape
-	manpower = 1637178
+	manpower = 1
 
 	STATE_category = town
 
 	history={
-		owner = SAF
+	
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2

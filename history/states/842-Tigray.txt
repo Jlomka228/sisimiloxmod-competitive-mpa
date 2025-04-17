@@ -33,13 +33,9 @@ state={
 		victory_points = {
 			13238 1 
 		}
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = TIG
-		add_claim_by = ERI
+		
 		1936.6.1 = {
-			owner = ITA
-			controller = ITA
+				
 
 		}
 
@@ -48,7 +44,7 @@ state={
 	provinces={
 		2072 13237 13238 
 	}
-	manpower=1000000
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

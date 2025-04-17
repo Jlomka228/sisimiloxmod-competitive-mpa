@@ -2,11 +2,11 @@
 STATE={
 	id=541
 	name="STATE_541"
-	manpower = 254100
+	manpower = 1
 	STATE_category = pastoral
 
 	history={
-		owner = SAF
+		
 		buildings = {
 			infrastructure = 2
 

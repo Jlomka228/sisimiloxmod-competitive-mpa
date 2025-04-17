@@ -7,8 +7,8 @@ STATE={
 	}
 
 	history={
-		owner = ENG
-		add_core_of = UNM
+		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 0

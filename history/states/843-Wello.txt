@@ -27,12 +27,9 @@ state={
 		victory_points = {
 			5097 1 
 		}
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = AFA
+		
 		1936.6.1 = {
-			owner = ITA
-			controller = ITA
+			
 
 		}
 
@@ -41,7 +38,7 @@ state={
 	provinces={
 		5097 7944 
 	}
-	manpower=650000
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

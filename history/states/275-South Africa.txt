@@ -2,7 +2,7 @@
 STATE={
 	id=275
 	name="STATE_275" # Transvaal
-	manpower = 3680363
+	manpower = 1
 	
 	STATE_category = city
 	
@@ -12,7 +12,7 @@ STATE={
 	}
 
 	history={
-		owner = SAF
+		
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1

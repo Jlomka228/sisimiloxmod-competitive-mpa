@@ -1,7 +1,7 @@
 state = {
 	id = 838 # Illubabor-Kaffa
 	name = "STATE_838"
-	manpower = 600000
+	manpower = 1
 	resources = {
 		rubber = 2
 	}
@@ -34,10 +34,7 @@ state = {
 			7912 1  
 		}
 		
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = GBA
-
+	
 		1936.6.1 = {
 			owner = ITA
 			controller = ITA

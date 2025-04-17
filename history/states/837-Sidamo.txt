@@ -1,7 +1,7 @@
 state = {
 	id = 837 # Sidamo (including Gammu Gofa)
 	name = "STATE_837"
-	manpower = 950000
+	manpower = 1
 	resources = {
 		rubber = 3
 	}
@@ -36,10 +36,7 @@ state = {
 			13247 1 
 		}
 		
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = SID
-		add_core_of = ORO
+	
 
 		1936.6.1 = {
 			owner = ITA

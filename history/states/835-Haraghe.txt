@@ -1,7 +1,7 @@
 state = {
 	id = 835 # Hararghe
 	name = "STATE_835"
-	manpower = 1500000
+	manpower = 1
 	resources = {
 	}
 	
@@ -38,10 +38,7 @@ state = {
 			12812 1
 		}
 		
-		owner = ETH
-		add_core_of = ETH
-		add_core_of = SOM
-		add_core_of = HAR
+		
 
 		1936.6.1 = {
 			owner = ITA

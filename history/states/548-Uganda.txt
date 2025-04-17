@@ -7,12 +7,12 @@ STATE={
 		rubber=3 # was: 4
 	}
 	history={
-		owner = ENG
+		
 		buildings = {
 			infrastructure = 2
 
 		}
-		add_core_of = UNM
+		
 		victory_points = {
 			12989 1
 		}
@@ -21,7 +21,7 @@ STATE={
 	provinces={
 		3854 7088 7133 8223 12929 12989 13177 
 	}
-	manpower=3515625
+	manpower=1
 	buildings_max_level_factor=1.000
 
 	local_supplies=0.0 

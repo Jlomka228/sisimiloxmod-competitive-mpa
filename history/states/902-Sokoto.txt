@@ -5,8 +5,8 @@ STATE={
 	STATE_category = pastoral
 
 	history={
-		owner = ENG
-		add_core_of = UNM
+		owner = FRA
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 1
 		}
