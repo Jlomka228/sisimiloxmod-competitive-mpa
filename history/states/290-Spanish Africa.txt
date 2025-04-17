@@ -12,7 +12,8 @@ STATE={
 	}
 
 	history={
-		add_core_of = UNM
+		owner = FRA
+		add_core_of = FRA
 		victory_points = {
 			9945 3
 		}

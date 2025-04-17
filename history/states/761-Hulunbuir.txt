@@ -9,10 +9,9 @@ STATE={
 	STATE_category = pastoral
 	history={
 		1936.1.1.13 = { owner = }
-		owner = MAN
-		add_core_of = CHI
-		add_core_of = MAN
-		add_core_of = CHI
+		owner = JAP
+		add_core_of = JAP
+	
 		buildings = {
 			infrastructure = 2
 

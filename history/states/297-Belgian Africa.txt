@@ -7,8 +7,9 @@ STATE=
 	STATE_category = enclave
 	
 	history={
-	owner = FRA
+		owner = FRA
 		add_core_of = FRA
+	}	
 	provinces={1903 8244}
 
 	local_supplies=0.0 
