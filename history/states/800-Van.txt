@@ -3,7 +3,7 @@ STATE={
 	name="STATE_800" #Van
 
 	history={
-		owner = UNM
+		
 		victory_points = {
 			6935 5 
 		}
@@ -18,7 +18,7 @@ STATE={
 	provinces={
 		652 4583 6935 7470 11880 12376 13121 
 	}
-	manpower = 365490
+	manpower = 1
 	STATE_category = rural
 
 	local_supplies=0.0 

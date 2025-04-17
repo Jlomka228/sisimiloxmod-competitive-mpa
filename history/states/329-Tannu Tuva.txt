@@ -2,7 +2,7 @@
 STATE={
 	id=329
 	name="STATE_329"
-	manpower = 85000
+	manpower = 1
 	resources={
 		chromium=2 # was: 2
 	}
@@ -10,7 +10,7 @@ STATE={
 	STATE_category = rural
 
 	history={
-		owner = MON
+		
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1

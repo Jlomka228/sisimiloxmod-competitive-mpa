@@ -2,12 +2,12 @@
 STATE={
 	id=349
 	name="STATE_349"
-	manpower = 592821
+	manpower = 1
 	
 	STATE_category = rural
 
 	history={
-		owner = UNM
+		
 		victory_points = {
 			9777 3 
 		}

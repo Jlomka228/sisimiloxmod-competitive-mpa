@@ -2,13 +2,13 @@
 STATE={
 	id=348
 	name="STATE_348" # Kayseri
-	manpower = 858452
+	manpower = 1
 	resources = { chromium = 32 }
 	
 	STATE_category = rural
 
 	history={
-		owner = UNM
+		
 		victory_points = {
 			3870 5 
 		}
