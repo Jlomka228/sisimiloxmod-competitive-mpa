@@ -7,9 +7,9 @@ STATE={
 	STATE_category = large_city
 
 	history={
-	}
+	
 
-		}
+		
 		buildings = {
 			infrastructure = 4 #was: 7
 			arms_factory = 1
@@ -19,7 +19,7 @@ STATE={
 				naval_base = 4
 			}
 		}
-
+    }
 	provinces={
 		854 872 897 3898 3899 6812 6836 6865 6927 6966 9764 9797 9824 11779 
 	}

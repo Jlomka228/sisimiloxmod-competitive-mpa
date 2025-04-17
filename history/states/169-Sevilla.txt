@@ -3,8 +3,8 @@ STATE={
 	name="STATE_169"
 
 	history={
-	}
-		}
+	
+		
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
@@ -14,7 +14,7 @@ STATE={
 				naval_base = 5
 
 			}
-
+        }
 	}
 
 	provinces={

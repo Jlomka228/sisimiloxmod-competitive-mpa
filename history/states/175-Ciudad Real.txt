@@ -3,7 +3,6 @@ STATE={
 	name="STATE_175"
 
 	history={
-		owner = SPR
 		victory_points = {
 			6832 1 
 		}
@@ -19,7 +18,7 @@ STATE={
 	provinces={
 		3953 6800 6832 6896 9778 9828 9881 11863 12081 13229 
 	}
-	manpower=526903
+	manpower=1
 	buildings_max_level_factor=1.000
 	STATE_category=rural
 
