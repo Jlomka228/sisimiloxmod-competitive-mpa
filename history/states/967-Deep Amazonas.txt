@@ -4,9 +4,7 @@ state={
 	name="STATE_967"
 
 	history={
-		owner = BRA
-		add_core_of = BRA
-
+	
 	}
 
 	provinces={

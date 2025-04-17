@@ -2,7 +2,7 @@
 STATE={
 	id=277
 	name="STATE_277"
-	manpower = 3424403
+	manpower = 1
 	
 	STATE_category = city
 
@@ -11,7 +11,7 @@ STATE={
 	}
 	
 	history={
-		owner = MEX
+
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 2
