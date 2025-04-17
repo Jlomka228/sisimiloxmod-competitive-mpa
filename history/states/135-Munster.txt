@@ -1,13 +1,13 @@
 
-STATE={
+state={
 	id=135
 	name="STATE_135"
 	manpower = 941400
 
-	STATE_category = town
+	state_category = town
 
 	history={
-		owner = ENG
+		owner = IRE
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
@@ -18,7 +18,7 @@ STATE={
 		victory_points = {
 			6313 1 #Limerick
 		}
-		add_core_of = ENG
+		add_core_of = IRE
 	}
 
 	provinces={

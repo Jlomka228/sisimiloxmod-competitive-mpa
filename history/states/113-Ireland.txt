@@ -1,5 +1,5 @@
 
-STATE={
+state={
 	id=113
 	name="STATE_113" # Leinster
 	manpower = 1357600
@@ -8,15 +8,15 @@ STATE={
 		steel=2 # was: 3
 	}
 	
-	STATE_category = city
+	state_category = city
 	
 	history={
-		owner = ENG
+		owner = IRE
 		victory_points = {
 			285 1 #Wexford
 		}
 		victory_points = {
-			303 1 #TullaUNMe
+			303 1 #Tullamore
 		}
 		victory_points = {
 			11293 10 #Dublin
@@ -30,7 +30,7 @@ STATE={
 				naval_base = 6
 			}
 		}
-		add_core_of = ENG
+		add_core_of = IRE
 	}
 
 	provinces={
