@@ -1,11 +1,12 @@
-STATE={
+state={
 	id=788
 	name="STATE_788"
 
 	resources={
-		tungsten=160
+		tungsten=10.000 #added due to Portugal Setup
 	}
 	history={
+		owner = SPR
 		victory_points = {
 			3874 1 
 		}
@@ -20,9 +21,9 @@ STATE={
 	provinces={
 		794 874 3874 6867 9770 13221 
 	}
-	manpower=1
+	manpower=364601
 	buildings_max_level_factor=1.000
-	STATE_category=pastoral
+	state_category=pastoral
 
 	local_supplies=0.0 
 }

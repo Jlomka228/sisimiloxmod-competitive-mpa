@@ -6,5 +6,5 @@ tags={
 	"Military"
 }
 name="sisimiloxmod competitive mp mod"
-supported_version="1.16.4"
+supported_version="1.14.5"
 remote_file_id="3465426396"

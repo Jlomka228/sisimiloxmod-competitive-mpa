@@ -3,19 +3,10 @@
 	division_names_group = GER_Inf_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-   		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-  		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+	
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
+		
 	}
 }
 division_template = {
@@ -23,18 +14,10 @@ division_template = {
 	division_names_group = GER_Mnt_01
 
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-	    mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
+		
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		
 	}
 }
 division_template = { 						
@@ -42,11 +25,7 @@ division_template = {
 	division_names_group = GER_PAR_01
 
 	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
+		
 	}
 }
 division_template = {
@@ -54,20 +33,10 @@ division_template = {
 	division_names_group = GER_MOT_02
 
 	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-	    motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+		
 	}
 	support = {
-        mot_recon = { x = 0 y = 0 }
-	 	engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }			
+       		
 	}
 }
 division_template = {
@@ -75,15 +44,11 @@ division_template = {
 	division_names_group = GER_LTARM_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
-		motorized = { x = 1 y = 0 }			
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
+				# REVISIT -- L Arm = Pz IIC (variant?) for all
+		
 	}
 	support = {
-		mot_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		
 	}
 }
 division_template = {
@@ -91,17 +56,11 @@ division_template = {
 	division_names_group = GER_Arm_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }		# REVISIT -- L Arm = Pz IIC (variant?) for all
-		light_armor = { x = 0 y = 1 }		
-		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
+				# REVISIT -- L Arm = Pz IIC (variant?) for all
+	
 	}
 	support = {
-		mot_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		
 	}
 }
 division_template = {
@@ -109,9 +68,7 @@ division_template = {
 	division_names_group = GER_SS_01
 
 	regiments = {
-		motorized = { x = 0 y = 0 }
-	    motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
+		
 	}
 	support = {
         artillery = { x = 0 y = 0 }			
@@ -136,15 +93,8 @@ division_template = {
 	division_names_group = GER_GAR_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }				# Lower-quality equipment and training
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-   		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-  		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+					# Lower-quality equipment and training
+		
 	}
 	priority = 0
 }
