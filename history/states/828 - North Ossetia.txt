@@ -1,4 +1,4 @@
-STATE = {
+state = {
 	id = 828
 	name = "STATE_828"
 	resources = {
@@ -12,6 +12,7 @@ STATE = {
 
 		}
 		add_core_of = SOV
+		add_core_of = NOA
 		victory_points = {
 			9628 3
 		}
@@ -22,7 +23,7 @@ STATE = {
 	}
 	manpower = 387990
 	buildings_max_level_factor = 1.000
-	STATE_category = rural
+	state_category = rural
 
 	local_supplies = 0.0 
 }

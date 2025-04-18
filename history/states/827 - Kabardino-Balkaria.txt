@@ -1,4 +1,4 @@
-STATE = {
+state = {
 	id = 827
 	name = "STATE_827"
 	resources = {
@@ -12,6 +12,7 @@ STATE = {
 
 		}
 		add_core_of = SOV
+		add_core_of = KBK
 		victory_points = {
 			11614 1
 		}
@@ -22,7 +23,7 @@ STATE = {
 	}
 	manpower = 387990
 	buildings_max_level_factor = 1.000
-	STATE_category = pastoral
+	state_category = pastoral
 
 	local_supplies = 0.0 
 }

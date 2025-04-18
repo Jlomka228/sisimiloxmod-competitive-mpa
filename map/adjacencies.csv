@@ -63,7 +63,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6542;9503;impassable;-1;-1;-1;-1;-1;;mazhino
 6712;9503;impassable;-1;-1;-1;-1;-1;;mazhino
 6712;6529;impassable;-1;-1;-1;-1;-1;;mazhino
-11640;678;impassable;-1;-1;-1;-1;-1;;mazhino	
+11640;678;impassable;-1;-1;-1;-1;-1;;mazhino
 5563;5613;;-1;-1;-1;-1;-1;AST_1;AST-1
 5563;5364;;-1;-1;-1;-1;-1;AST_1;AST-1
 7461;430;;-1;-1;-1;-1;-1;AST_2;AST-2

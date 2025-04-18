@@ -9,14 +9,14 @@ STATE=
 	history=
 	{
 		1936.1.1.13 = { owner = }
-		owner = PHI
+		owner = USA
 		buildings = {
 			infrastructure = 2
 			4429 = {
 				naval_base = 1
 			}
 		}
-		add_core_of = PHI
+		add_core_of = USA
 	}
 	provinces={
 		4429 7419 10145 

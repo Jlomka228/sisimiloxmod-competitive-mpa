@@ -1,4 +1,4 @@
-STATE={
+state={
 	id=230
 	name="STATE_230"
 
@@ -17,6 +17,14 @@ STATE={
 
 		}
 		add_core_of = SOV
+		add_core_of = ARM
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+
+			}
+
+		}
 
 	}
 
@@ -25,7 +33,7 @@ STATE={
 	}
 	manpower=1250082
 	buildings_max_level_factor=1.000
-	STATE_category=town
+	state_category=town
 
 	local_supplies=0.0 
 }

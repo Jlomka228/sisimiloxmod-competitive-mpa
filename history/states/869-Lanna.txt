@@ -13,8 +13,8 @@ STATE={
                         arms_factory = 1
 			industrial_complex = 1
 		}
-		owner = SIA
-		add_core_of = SIA
+		owner = JAP
+		add_core_of = JAP
 	}
 	manpower=2000000
 	STATE_category = rural

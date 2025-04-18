@@ -9,7 +9,7 @@ STATE=
 	history=
 	{
 		1936.1.1.13 = { owner = }
-		owner = PHI
+		owner = USA
 		buildings = {
 			infrastructure = 2
 			12118 = {
@@ -20,7 +20,7 @@ STATE=
 		victory_points = {
 			12118 1 
 		}
-		add_core_of = PHI
+		add_core_of = USA
 	}
 
 	provinces={

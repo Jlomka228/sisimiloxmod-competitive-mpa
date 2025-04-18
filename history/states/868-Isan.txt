@@ -6,14 +6,14 @@ STATE={
 	}
 	history = {
 		1936.1.1.13 = { owner = }
-		owner = SIA
+		owner = JAP
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {
 			10438 1 
 		}
-		add_core_of = SIA
+		add_core_of = JAP
 	}
 	manpower=2000000
 	STATE_category = rural
