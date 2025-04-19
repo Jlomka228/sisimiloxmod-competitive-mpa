@@ -1221,6 +1221,19 @@ SOV_capital_of_the_tsars = {
 	state_production_speed_buildings_factor = 0.25
 }
 
+no_jap_asian_wal_dm = { # Десижины япы на валл
+    icon = GFX_modifiers_conscription_exemptions_granted
+    army_defence_factor = 0.15
+	dig_in_speed_factor = 0.25
+	supply_consumption_factor = -0.10
+	cas_damage_reduction = 0.05 
+}
+
+no_fra_mainland_buildings = { # Французский дебафф на стейтах в мейне
+    icon = GFX_modifiers_conscription_exemptions_granted
+    local_building_slots_factor = -2
+}
+
 RAJ_agrarian_society_dynamic = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
